@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Databuzz Team Prototype Web Site</title>
+	<meta name="author" content="Gil 'Ragnar' Felot" />
+    <meta content="http://XXXXX.com" name="identifier-url">
+    <meta content="FR" http-equiv="content-language">
+	<meta name="description" content="DataViz pour Bordeaux" />
+	<meta name="keywords"  content="DataViz, Bordeaux, Graphique" />
+	<meta name="Resource-type" content="Document" />
+
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="script/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="script/style.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				sectionsColor: ['#5B3C11', '#1bbc9b', '#4BBFC3', '#7BAABE', '#F5C632', '#AB32FF'],
+				afterRender: function(){
+
+					//setting the size
+					$('video').height($(window).height());
+
+					//playing the video
+					$('video').get(0).play();
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="header"> 	<!-- OUVERTURE HEADER -->
+        	<div id="logo">
+				<img src="img/logo.jpg"> <!-- EMPLACEMENT LOGO DROITE -->
+                
+            </div> <!-- FERMETURE LOGO -->
+		</div> <!-- FERMETURE HEADER -->
+        
+		<div id="menu"> <!-- OUVERTURE NAVIGATION GRILLE A DROITE -->
+				<ul>
+                    <li  data-tooltip ="First">
+                        <div class="pageName">ACCEUIL</div>
+                <ul>
+                    </li>
+
+                    <li>
+                        <a page="1" block="1" href="javascript:;" onclick=""></a> 
+                    </li>
+                </ul>
+                    </li>
+                    <li>
+                    <div class="pageName">DataBuzz</div> 
+                <ul>
+                    </li>
+                    <li><a page="2" block="1" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="2" block="2" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="2" block="3" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="2" block="4" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="2" block="5" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="2" block="6" href="javascript:;" onclick=""></a> 
+                    </li>
+                </ul>
+                    </li>
+                    <li>
+                    <div class="pageName">Durable
+                    </div>
+                <ul>
+                    </li>
+                    <li><a page="3" block="1" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="3" block="2" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="3" block="3" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="3" block="4" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="3" block="5" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="3" block="6" href="javascript:;" onclick=""></a> 
+                    </li>
+                </ul>
+                    </li>
+                    <li>
+                    <div class="pageName">Sociale
+                    </div>
+                <ul>
+                    </li>
+                    <li><a page="4" block="1" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="4" block="2" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="4" block="3" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="4" block="4" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="4" block="5" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="4" block="6" href="javascript:;" onclick=""></a> 
+                    </li>
+                </ul>
+                    </li>
+                    <li>
+                    <div class="pageName">Performante
+                    </div>
+                <ul>
+                    </li>
+                    <li><a page="5" block="1" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="5" block="2" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="5" block="3" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="5" block="4" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="5" block="5" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="5" block="6" href="javascript:;" onclick=""></a> 
+                    </li>
+                </ul>
+                    </li>
+                    <li>
+                    <div class="pageName">Connectée
+                    </div>
+                <ul>
+                    </li>
+                    <li><a page="6" block="1" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="6" block="2" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="6" block="3" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="6" block="4" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="6" block="5" href="javascript:;" onclick=""></a> 
+                    </li>
+                    <li><a page="6" block="6" href="javascript:;" onclick=""></a> 
+                    </li>
+                </ul>
+                    </li>
+                </ul>
+                
+        </div> <!-- FERMETURE MINIMAP -->
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<video autoplay loop muted="false">
+			<source src="img/anim_logo.mp4" type="video/mp4">
+			<source src="img/anim_logo.webm" type="video/webm">
+		</video>
+		<div class="layer">
+			<!-- <h1>ILLINDA</h1>
+			<h2>Acceuil</h2> -->
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1"><h1>DataBuzz</h1></div>
+	    <div class="slide" id="slide2"><h1>Slide 1.2</h1></div>
+        <div class="slide" id="slide3"><h1>Slide 1.3</h1></div>
+        <div class="slide" id="slide4"><h1>Slide 1.4</h1></div>
+        <div class="slide" id="slide5"><h1>Slide 1.5</h1></div>
+        <div class="slide" id="slide6"><h1>Slide 1.6</h1></div>
+	</div>
+
+	<div class="section" id="section2">
+        <div class="slide" id="slide1"><h1>Durable</h1></div>
+        <div class="slide" id="slide2"><h1>Slide 2.2</h1></div>
+        <div class="slide" id="slide3"><h1>Slide 2.3</h1></div>
+        <div class="slide" id="slide4"><h1>Slide 2.4</h1></div>
+        <div class="slide" id="slide5"><h1>Slide 2.5</h1></div>
+        <div class="slide" id="slide6"><h1>Slide 2.6</h1></div>
+    </div>
+
+	<div class="section" id="section3">
+        <div class="slide" id="slide1"><h1>Sociale</h1></div>
+        <div class="slide" id="slide2"><h1>Slide 3.2</h1></div>
+        <div class="slide" id="slide3"><h1>Slide 3.3</h1></div>
+        <div class="slide" id="slide4"><h1>Slide 3.4</h1></div>
+        <div class="slide" id="slide5"><h1>Slide 3.5</h1></div>
+        <div class="slide" id="slide6"><h1>Slide 3.6</h1></div>
+    </div>
+	
+    <div class="section" id="section4">
+        <div class="slide" id="slide1"><h1>Performante</h1></div>
+        <div class="slide" id="slide2"><h1>Slide 4.2</h1></div>
+        <div class="slide" id="slide3"><h1>Slide 4.3</h1></div>
+        <div class="slide" id="slide4"><h1>Slide 4.4</h1></div>
+        <div class="slide" id="slide5"><h1>Slide 4.5</h1></div>
+        <div class="slide" id="slide6"><h1>Slide 4.6</h1></div>
+    </div>
+	
+    <div class="section" id="section5">
+        <div class="slide" id="slide1"><h1>Connectée</h1></div>
+        <div class="slide" id="slide2"><h1>Slide 5.2</h1></div>
+        <div class="slide" id="slide3"><h1>Slide 5.3</h1></div>
+        <div class="slide" id="slide4"><h1>Slide 5.4</h1></div>
+        <div class="slide" id="slide5"><h1>Slide 5.5</h1></div>
+        <div class="slide" id="slide6"><h1>Slide 5.6</h1></div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

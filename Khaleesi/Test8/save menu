@@ -1,0 +1,109 @@
+<!-- Menu-->
+			<div id="menu"> 
+				<ul id="menu_start">
+	        		<li>
+	        			<div class="pageName">Accueil</div>
+	        			<ul>
+	        				<li data-menuanchor="accueil_sas" class="button"><a href="#accueil_sas"></li>
+	        			</ul>
+	        		</li>
+	             	<li>
+		        		<div class="pageName">Durable</div>
+	        			<ul>
+	           				<li data-menuanchor="durable1" class="button"><a href="#durable1"></li>
+	        				<li data-menuanchor="durable2" class="button"><a href="#durable2"></li>
+	        				<li data-menuanchor="durable3" class="button"><a href="#durable3"></li>
+	        				<li data-menuanchor="durable4" class="button"><a href="#durable4"></li>
+	        				<li data-menuanchor="durable5" class="button"><a href="#durable5"></li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			<div class="pageName">Sociale</div>
+	        			<ul>
+	        				<li data-menuanchor="soc1" class="button"><a href="#soc1"></li>
+	        				<li data-menuanchor="soc2" class="button"><a href="#soc2"></li>
+	        				<li data-menuanchor="soc3" class="button"><a href="#soc3"></li>
+	        				<li data-menuanchor="soc4" class="button"><a href="#soc4"></li>
+	        				<li data-menuanchor="soc5" class="button"><a href="#soc5"></li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			<div class="pageName">Performante</div>
+	        			<ul>
+	        				<li data-menuanchor="perf1" class="button"><a href="#perf1"></li>
+	        				<li data-menuanchor="perf2" class="button"><a href="#perf2"></li>
+	        				<li data-menuanchor="perf3" class="button"><a href="#perf3"></li>
+	        				<li data-menuanchor="perf4" class="button"><a href="#perf4"></li>
+	        				<li data-menuanchor="perf5" class="button"><a href="#perf5"></li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			<div class="pageName">Connectée</div>
+	        			<ul>
+	          				<li data-menuanchor="connect1" class="button"><a href="#connect1"></li>
+	        				<li data-menuanchor="connect2" class="button"><a href="#connect2"></li>
+	        				<li data-menuanchor="connect3" class="button"><a href="#connect3"></li>
+	        				<li data-menuanchor="connect4" class="button"><a href="#connect4"></li>
+	        				<li data-menuanchor="connect5" class="button"><a href="#connect5"></li>
+	        			</ul>
+	        		</li>
+	       		</ul>
+	    	</div> <!-- FERMETURE MINIMAP -->
+
+
+
+
+<!-- V2 -->
+<!-- Menu-->
+			<div id="menu"> 
+				<ul id="menu_start">
+	        		<li>
+	        			<div class="pageName">Accueil</div>
+	        			<ul>
+	        				<li class="button"></li>
+	        			</ul>
+	        		</li>
+	             	<li>
+		        		<div class="pageName">Durable</div>
+	        			<ul>
+	           				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			<div class="pageName">Sociale</div>
+	        			<ul>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			<div class="pageName">Performante</div>
+	        			<ul>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			<div class="pageName">Connectée</div>
+	        			<ul>
+	          				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        				<li class="button"></li>
+	        			</ul>
+	        		</li>
+	       		</ul>
+	    	</div> <!-- FERMETURE MINIMAP -->
+
+

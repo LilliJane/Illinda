@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Databuzz Team Prototype Web Site</title>
+	<meta name="author" content="Gil 'Ragnar' Felot" />
+    <meta content="http://XXXXX.com" name="identifier-url">
+    <meta content="FR" http-equiv="content-language">
+	<meta name="description" content="DataViz pour Bordeaux" />
+	<meta name="keywords"  content="DataViz, Bordeaux, Graphique" />
+	<meta name="Resource-type" content="Document" />
+
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/animate.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" ></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				afterRender: function(){
+					$('video').get(0).play();
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+<header>
+    <img src="img/logo_w.png" id="header-logo">
+
+    <h1>La ville connectée</h1>
+
+	<div id="menu"> <!-- OUVERTURE NAVIGATION GRILLE A DROITE -->
+		<ul>
+        	<li>
+        		<div class="pageName">Accueil</div>
+        		<ul>
+        			<li class="button"></li>
+        		</ul>
+        	</li>
+        	<li>
+        		<div class="pageName">Databuzz</div>
+        		<ul>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        		</ul>
+        	</li>
+        	<li>
+	        	<div class="pageName">Durable</div>
+        		<ul>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        		</ul>
+        	</li>
+        	<li>
+        		<div class="pageName">Sociale</div>
+        		<ul>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        		</ul>
+        	</li>
+        	<li>
+        		<div class="pageName">Performante</div>
+        		<ul>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        		</ul>
+        	</li>
+        	<li>
+        		<div class="pageName">Connecté</div>
+        		<ul>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        			<li class="button"></li>
+        		</ul>
+        	</li>
+        </ul>
+    </div> <!-- FERMETURE MINIMAP -->
+
+</header>
+	<div id="fullpage">
+	
+		<div class="section" id="section00">
+			<div id="logo">
+				<img src="img/logo_w.png" class="wow fadeInLeftBig">				
+			</div>
+				<video autoplay loop muted="false" >
+					<source src="img/anim_logo.mp4" type="video/mp4">
+					<source src="img/anim_logo.webm" type="video/webm">
+				</video>
+			
+			<div id="intro" class="wow fadeInLeftBig">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+			<div class="section" id="section01">
+               
+                    
+                    <div id="wifi">
+                    <h2>Legende de la Photo</h2></div>
+                    <aside>
+                        <h1>Lorem Upsum</h1>
+                        <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </aside>
+               
+			</div>
+
+			<div class="section" id="section02">
+	    	          <article id="graph021"></article>
+                      <article id="graph022"></article>
+			</div>
+		<div class="section" id="section1">
+	    	<div class="slide" id="slide1"><h1>DataBuzz</h1></div>
+	    	<div class="slide" id="slide2"><h1>Slide 1.2</h1></div>
+        	<div class="slide" id="slide3"><h1>Slide 1.3</h1></div>
+        	<div class="slide" id="slide4"><h1>Slide 1.4</h1></div>
+        	<div class="slide" id="slide5"><h1>Slide 1.5</h1></div>
+        	<div class="slide" id="slide6"><h1>Slide 1.6</h1></div>
+		</div>
+
+		<div class="section" id="section2">
+	    	<div class="slide" id="slide1"><h1>Durable</h1></div>
+	    	<div class="slide" id="slide2"><h1>Slide 2.2</h1></div>
+        	<div class="slide" id="slide3"><h1>Slide 2.3</h1></div>
+        	<div class="slide" id="slide4"><h1>Slide 2.4</h1></div>
+        	<div class="slide" id="slide5"><h1>Slide 2.5</h1></div>
+        	<div class="slide" id="slide6"><h1>Slide 2.6</h1></div>
+		</div>
+
+		<div class="section" id="section3">
+	    	<div class="slide" id="slide1"><h1>Sociale</h1></div>
+	    	<div class="slide" id="slide2"><h1>Slide 3.2</h1></div>
+        	<div class="slide" id="slide3"><h1>Slide 3.3</h1></div>
+        	<div class="slide" id="slide4"><h1>Slide 3.4</h1></div>
+        	<div class="slide" id="slide5"><h1>Slide 3.5</h1></div>
+        	<div class="slide" id="slide6"><h1>Slide 3.6</h1></div>
+		</div>
+
+		<div class="section" id="section4">
+	    	<div class="slide" id="slide1"><h1>Performante</h1></div>
+	    	<div class="slide" id="slide2"><h1>Slide 4.2</h1></div>
+        	<div class="slide" id="slide3"><h1>Slide 4.3</h1></div>
+        	<div class="slide" id="slide4"><h1>Slide 4.4</h1></div>
+        	<div class="slide" id="slide5"><h1>Slide 4.5</h1></div>
+        	<div class="slide" id="slide6"><h1>Slide 4.6</h1></div>
+		</div>
+
+		<div class="section" id="section5">
+	    	<div class="slide" id="slide1"><h1>Connectée</h1></div>
+	    	<div class="slide" id="slide2"><h1>Slide 5.2</h1></div>
+        	<div class="slide" id="slide3"><h1>Slide 5.3</h1></div>
+        	<div class="slide" id="slide4"><h1>Slide 5.4</h1></div>
+        	<div class="slide" id="slide5"><h1>Slide 5.5</h1></div>
+        	<div class="slide" id="slide6"><h1>Slide 5.6</h1></div>
+		</div>
+
+	</div>
+
+    
+
+</body>
+
+</html>
+

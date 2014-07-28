@@ -1,0 +1,115 @@
+/*CSS Test*/
+body
+{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #e7e7e8;
+}
+
+h1
+{
+	font-size: 5em; 
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin:0;
+    padding:0;	
+}
+
+p
+{
+	font-size: 2em;
+}
+#map
+{
+	position: absolute;
+	top: 180px;
+	left: 30px;
+	width: 1000px;
+	height: 570px;
+}
+
+.intro p
+{
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.section
+{
+	text-align:center;
+}
+
+.fullPage-slidesNav.bottom
+{
+	bottom: 25px;
+}
+
+.twitter-timeline
+{
+	display: inline-block;
+}
+
+header
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    height: 170px;
+    width: 100%;
+    background: white;
+    z-index: 2;
+}
+
+article, strong, aside
+{
+	height: 140px;
+	margin-top: 7px;
+	top: 0px;
+	position: absolute;
+	display:inline-block;
+	/*vertical-align: top;*/
+	z-index: 3;
+	border: 8px solid #ba2c1d;
+}
+
+article
+{
+	margin-left: 30px;
+	left: 0px;
+	width: 350px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background: white;
+	color: #C63D0F;
+	text-align: justify;
+}
+
+strong
+{
+	left: 380px;
+	font-size: 3em;
+	width: 650px;
+	text-transform: uppercase;
+	color: white;
+	background: #de3726;
+	vertical-align: text;
+}
+
+aside
+{
+	left: 1030px;
+	width: 300px;
+	background: white;
+	color: #C63D0F;
+}
+
+#minimap
+{
+	width: 50px;
+	height: 50px;
+	z-index: 3;
+}
+
+
+
+
+

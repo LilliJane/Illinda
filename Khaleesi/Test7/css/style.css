@@ -1,0 +1,296 @@
+body{
+	font-family: arial,helvetica;
+	overflow: hidden;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
+}
+
+/* Header fixe - Doit disparaitre a la 1ere page */
+
+header {
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	width: 100%;
+	height: 16%;
+	position: fixed;
+	z-index: 1;
+	/*border: solid 1px green;*/
+	background: #35495f;
+}
+
+#header-logo {
+	height: 80px;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: fixed;
+	display: inline-block;
+	/*border: solid 1px red;*/
+}
+
+header h1{
+	position: fixed;
+	font-size: 2.2em;
+	margin-left: 30%;
+	margin-top: 2%;
+	text-transform: uppercase;
+	position: absolute;
+	display:  inline-block;
+	color: #fff;
+	/*border: solid 1px green;*/
+	vertical-align: middle;
+}
+
+/* Menu */
+
+#menu{/*border: solid 1px red*/;position: fixed; right: 30px; font-size:10px;color:#fff;display: inline-block;}}
+#menu ul li{ list-style-type: none; height:13px;}
+#menu .pageName{text-align: right;display:inline-block;width:100px;vertical-align:1px;padding:1px 5px;}
+#menu ul {list-style-type:none;}
+#menu ul li ul{display:inline-block;width:100px;}
+#menu ul li ul li{display:block;position: relative;width:10px;height:10px;float:left;margin-right:4px;}
+#menu ul li ul li{
+	position: relative;
+	top:0;
+	left:0;
+	display:block;
+	background:#fff;
+	width:10px ;
+	height:10px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+    opacity : 0.4;
+    cursor:pointer;
+}
+
+.hightlight {
+	opacity: 0.8 !important;
+	background: #252b30 !important;
+}
+
+
+/* Contenu de la page Acceuil.0 */
+
+#accueil_sas{
+	background-image: url(../img/back.png);
+	background-size: cover;
+}
+
+#logo {
+	position: relative;
+	margin-top: 15%;
+	display: block;
+	height: 100px;
+	width: auto;
+}
+
+video{
+	/*border: solid 1px green;*/
+	display: block;
+	height: 300px;
+	width: auto;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#intro{
+	position: relative;
+	/*border: solid 1px pink;*/
+	display: block;
+	width: auto;
+	color: #fff;
+	margin-top: 10px;
+}
+
+/* Contenu de la page Acceuil.1 */
+
+#accueil_ville1{
+	background-color: #f2f2f2;
+}
+
+#wifi {
+	top: 30px;
+	background-image: url(../img/rsx.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	border: solid 1px red;
+	display: inline-block;
+	height: 50%;
+	width: 30%;
+	left: 20px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+#wifi h2 {
+	display: block;
+	right: 10px;
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+
+
+#accueil_ville1 aside{
+	top: 150px;
+	border: solid 1px green;
+	width: 40%;
+	display: inline-block;
+	color: #35495f;
+	position: relative;
+}
+
+#accueil_ville1 aside h1{
+	text-align: left;
+	font-size: 1.5em;
+	color: #35495f;
+
+}
+
+#accueil_ville1 aside p{
+	text-align : justify;
+	font-size: 1em;
+	right: -50px;
+}
+
+/* Contenu de la page Acceuil.2 */
+
+#accueil_ville2{
+	background-color: #fff;
+}
+
+/********************************/
+
+/* Contenu de la page Durable.1 */
+
+#durable_depl{
+	background-color: #5B3C11;
+}
+
+/* Contenu de la page Durable.2 */
+
+#durable_educ{
+	background-color: #1bbc9b;
+}
+
+/* Contenu de la page Durable.3 */
+
+#durable_eco{
+	background-color: #4BBFC3;
+}
+
+/* Contenu de la page Durable.4 */
+
+#durable_sante{
+	background-color: #7BAABE;
+}
+
+/* Contenu de la page Durable.5 */
+
+#durable_culture{
+	background-color: #F5C632;
+}
+
+/********************************/
+
+/* Contenu de la page Sociale.1 */
+
+#soc_depl{
+	background-color: #5B3C11;
+}
+
+/* Contenu de la page Sociale.2 */
+
+#soc_educ{
+	background-color: #1bbc9b;
+}
+
+/* Contenu de la page Sociale.3 */
+
+#soc_eco{
+	background-color: #4BBFC3;
+}
+
+/* Contenu de la page Sociale.4 */
+
+#soc_sante{
+	background-color: #7BAABE;
+}
+
+/* Contenu de la page Sociale.5 */
+
+#soc_culture{
+	background-color: #F5C632;
+}
+
+/********************************/
+
+/* Contenu de la page Perf.1 */
+
+#perf_depl{
+	background-color: #5B3C11;
+}
+
+/* Contenu de la page Perf.2 */
+
+#perf_educ{
+	background-color: #1bbc9b;
+}
+
+/* Contenu de la page Perf.3 */
+
+#perf_eco{
+	background-color: #4BBFC3;
+}
+
+/* Contenu de la page Perf.4 */
+
+#perf_sante{
+	background-color: #7BAABE;
+}
+
+/* Contenu de la page Perf.5 */
+
+#perf_culture{
+	background-color: #F5C632;
+}
+
+/********************************/
+
+/* Contenu de la page Connect.1 */
+
+#connect_depl{
+	background-color: #5B3C11;
+}
+
+/* Contenu de la page Connect.2 */
+
+#connect_educ{
+	background-color: #1bbc9b;
+}
+
+/* Contenu de la page Connect.3 */
+
+#connect_eco{
+	background-color: #4BBFC3;
+}
+
+/* Contenu de la page Connect.4 */
+
+#connect_sante{
+	background-color: #7BAABE;
+}
+
+/* Contenu de la page Connect.5 */
+
+#connect_culture{
+	background-color: #F5C632;
+}
+
+/********************************/
+
