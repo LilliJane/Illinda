@@ -1,0 +1,23 @@
+server {
+       listen		80;
+       listen		[::]:80;
+
+       server_name	localhost 10.50.10.222;
+
+       access_log /var/log/nginx/illinda.access.log;
+       error_log /var/log/nginx/illinda.error.log;
+
+       index index.html index.htm;
+       root /home/databuzz/Illinda/Khaleesi;
+
+       location / {
+       		autoindex		on;
+		auth_basic		"Closed Site";
+		auth_basic_user_file 	$document_root/.htpasswd;
+	}		      
+
+       error_page	500 502 503 504 /50x.html;
+       location = /50x.html {
+       		root html;
+       }
+}
