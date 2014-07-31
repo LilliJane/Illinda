@@ -1,0 +1,44 @@
+<%= link_to 'Wifi Users', wifiusers_path %>
+<%= link_to 'Consos Wifi', wificonsos_path %>
+<%= link_to 'Trafic Gowex', traficgowexes_path %>
+<%= link_to 'Tweets', tweets_path %>
+
+<h1>Listing wificonsos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Month</th>
+      <th>News</th>
+      <th>Sessions</th>
+      <th>Hours</th>
+      <th>Up b</th>
+      <th>Down b</th>
+      <th>Up gb</th>
+      <th>Down gb</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wificonsos.each do |wificonso| %>
+      <tr>
+        <td><%= wificonso.year %></td>
+        <td><%= wificonso.month %></td>
+        <td><%= wificonso.news %></td>
+        <td><%= wificonso.sessions %></td>
+        <td><%= wificonso.hours %></td>
+        <td><%= wificonso.up_b %></td>
+        <td><%= wificonso.down_b %></td>
+        <td><%= wificonso.up_gb %></td>
+        <td><%= wificonso.down_gb %></td>
+        <td><%= link_to 'Show', wificonso %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wificonso', new_wificonso_path %>

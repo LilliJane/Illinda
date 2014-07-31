@@ -1,0 +1,53 @@
+<%= link_to 'Wifi Users', wifiusers_path %>
+<%= link_to 'Consos Wifi', wificonsos_path %>
+<%= link_to 'Trafic Gowex', traficgowexes_path %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @wificonso.year %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @wificonso.month %>
+</p>
+
+<p>
+  <strong>News:</strong>
+  <%= @wificonso.news %>
+</p>
+
+<p>
+  <strong>Sessions:</strong>
+  <%= @wificonso.sessions %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @wificonso.hours %>
+</p>
+
+<p>
+  <strong>Up b:</strong>
+  <%= @wificonso.up_b %>
+</p>
+
+<p>
+  <strong>Down b:</strong>
+  <%= @wificonso.down_b %>
+</p>
+
+<p>
+  <strong>Up gb:</strong>
+  <%= @wificonso.up_gb %>
+</p>
+
+<p>
+  <strong>Down gb:</strong>
+  <%= @wificonso.down_gb %>
+</p>
+
+<%= link_to 'Edit', edit_wificonso_path(@wificonso) %> |
+<%= link_to 'Back', wificonsos_path %>

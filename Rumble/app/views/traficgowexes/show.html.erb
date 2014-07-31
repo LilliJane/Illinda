@@ -1,0 +1,48 @@
+<%= link_to 'Wifi Users', wifiusers_path %>
+<%= link_to 'Consos Wifi', wificonsos_path %>
+<%= link_to 'Trafic Gowex', traficgowexes_path %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @traficgowex.date %>
+</p>
+
+<p>
+  <strong>Hour:</strong>
+  <%= @traficgowex.hour %>
+</p>
+
+<p>
+  <strong>Avrcv:</strong>
+  <%= @traficgowex.avrcv %>
+</p>
+
+<p>
+  <strong>Minrcv:</strong>
+  <%= @traficgowex.minrcv %>
+</p>
+
+<p>
+  <strong>Maxrcv:</strong>
+  <%= @traficgowex.maxrcv %>
+</p>
+
+<p>
+  <strong>Avtr:</strong>
+  <%= @traficgowex.avtr %>
+</p>
+
+<p>
+  <strong>Mintr:</strong>
+  <%= @traficgowex.mintr %>
+</p>
+
+<p>
+  <strong>Maxtr:</strong>
+  <%= @traficgowex.maxtr %>
+</p>
+
+<%= link_to 'Edit', edit_traficgowex_path(@traficgowex) %> |
+<%= link_to 'Back', traficgowexes_path %>

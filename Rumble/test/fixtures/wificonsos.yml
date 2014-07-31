@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  month: MyText
+  news: MyText
+  sessions: MyText
+  hours: MyText
+  up_b: MyText
+  down_b: MyText
+  up_gb: MyText
+  down_gb: MyText
+
+two:
+  year: 1
+  month: MyText
+  news: MyText
+  sessions: MyText
+  hours: MyText
+  up_b: MyText
+  down_b: MyText
+  up_gb: MyText
+  down_gb: MyText
