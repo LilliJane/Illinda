@@ -2726,7 +2726,7 @@ select[multiple].input-lg {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.42857143;
+  line-height: 3%;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -2737,7 +2737,7 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3051,8 +3051,8 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-lg > .btn {
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
+  line-height: 6.5%;
+  border-radius: 0px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
