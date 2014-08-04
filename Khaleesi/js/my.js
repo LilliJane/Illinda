@@ -2,6 +2,13 @@ $(document).ready( function() {
 
 /* Ancien code pour cacher le header - A modifier */
 
+	if ($('#accueil_sas').hasClass('active')) {
+		console.log('PooPoooPOOOOOOO !');
+	} else {
+		$('header').css('display', 'block');
+	}
+
+
 // if ($('#page_1').hasClass('currentPage')) {
 // 		$('header').hide();
 // 	} else {
@@ -17,7 +24,7 @@ $(document).ready( function() {
 
 
 
-/* Ancien code pour les bouton Wifi/Hood - A modifier */
+/* Ancien code pour les bouton Wifi/Hood - Done */
 
 	$("body").on("click", ".wifiBtn", function() {
 		if ($(this).hasClass('active')) {

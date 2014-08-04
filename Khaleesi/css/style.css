@@ -171,6 +171,11 @@ video {
 	background-size: cover;
 }
 
+#zoneA2{
+	height: 100% !important;
+	/*width: auto;*/
+}
+
 #infoA1 {
 	/*border: solid 1px pink;*/
 	margin-left: 2%;
@@ -182,6 +187,7 @@ video {
 
 #articleAccueil {
 	/*border: solid 1px green;*/
+	height: 80%;
 	border-right: solid 1px #ff6b6b;
 	padding-right: 2%;
 }
