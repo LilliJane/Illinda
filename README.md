@@ -5,6 +5,7 @@ La ville intelligente de demain.
 Le projet Illinda est un projet de Datavisualisation des données de la ville de Bordeaux et de ses citoyens, créé et développé par quatre étudiants issus de trois écoles différentes. Un graphiste, deux développeurs et une chargée de communication travaillent ensemble sur la problématique de la ville intelligente de demain. Le projet sera présenté lors de la Semaine Digitale à partir du 13 octobre 2014 à Bordeaux. L’idée est de faire un état des lieux des initiatives de la ville en terme de numérique et de ville intelligente, ainsi qu’une ouverture sur son futur  année+10 , en utilisant la datavisualisation comme support. L’équipa utilise alors des données en Open Data, des données privées, ainsi que des données simulées dans l’objectif de prédire certains comportements.
 
 https://www.facebook.com/illindabdx
+
 https://twitter.com/illindabdx
 
 ==========================
