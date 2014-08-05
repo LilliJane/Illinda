@@ -2,12 +2,10 @@ Illinda
 ========
 
 La ville intelligente de demain.
-Illinda est un projet de datavisualisation sur les données ouvertes de Bordeaux.
+Le projet Illinda est un projet de Datavisualisation des données de la ville de Bordeaux et de ses citoyens, créé et développé par quatre étudiants issus de trois écoles différentes. Un graphiste, deux développeurs et une chargée de communication travaillent ensemble sur la problématique de la ville intelligente de demain. Le projet sera présenté lors de la Semaine Digitale à partir du 13 octobre 2014 à Bordeaux. L’idée est de faire un état des lieux des initiatives de la ville en terme de numérique et de ville intelligente, ainsi qu’une ouverture sur son futur  année+10 , en utilisant la datavisualisation comme support. L’équipa utilise alors des données en Open Data, des données privées, ainsi que des données simulées dans l’objectif de prédire certains comportements.
 
-Qu'est ce que la datavisualisation ?
-C'est le traitement visuel de l'information depuis une base de données.
-
-Projet qui sera présenté lors de la Semaine Digitale de Bordeaux #4.
+https://www.facebook.com/illindabdx
+https://twitter.com/illindabdx
 
 ==========================
 
@@ -20,7 +18,8 @@ This is the visual processing of the information from a database.
 Project that will be presented during the Bordeaux's digital week #4.
 
 ====
-Utilisation de Nginx, Ruby, serveur FTP (avec mySQL pour la gestion des users).
+Utilisation de Nginx, Ruby.
+
 Pour installer nginx : 
 S'il faut lier l'utilisation de rails à nginx, utiliser la gem passenger. https://www.phusionpassenger.com/documentation/Users%20guide%20Nginx.html#rubygems_generic_install
 - installer depuis les sources via nginx.org et wget
