@@ -58,8 +58,12 @@ $(document).ready( function() {
 			$('#zoneA1graph').removeClass('zoneA1Wifi');
 		}
 	});
-});
 
 /* MiniMap */
 
-	$('#')
+	
+
+
+
+});
+
