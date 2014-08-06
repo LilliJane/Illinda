@@ -31,8 +31,19 @@
                 <div class="col-sm-offset-4 col-sm-2 logo_header">
                     <img src="img/logo_header.png">
                 </div>
-                <!-- Menu-->
                 
+                <!-- Menu-->
+                <div class="col-sm-offset-2 col-sm-3">
+                    <ul id="myMenu">
+                        <li data-menuanchor="A0" class="active"><a href="#A0">ACCUEIL</a></li>
+                        <li data-menuanchor="A1"><a href="#A1">SAS1</a></li>
+                        <li data-menuanchor="A2"><a href="#A2">SAS2</a></li>
+                        <li data-menuanchor="B1"><a href="#B1">DURABLE</a></li>
+                        <li data-menuanchor="C1"><a href="#C1">SOCIALE</a></li>
+                        <li data-menuanchor="D1"><a href="#D1">PERF</a></li>
+                        <li data-menuanchor="E1"><a href="#E1">CONNECT</a></li>
+                    </ul>
+                </div>
 
             </header>
 
@@ -70,13 +81,13 @@
                 <div id="accueil_ville1" class="section">
                     <div class="row" id="btnA1">
                         <div class="col-sm-3">
-                            <button id="test" type="button" class="wifiBtn btn btn-default btn-lg active">
-                                <span class="glyphicon glyphicon-signal"></span> Wifi
+                            <button type="button" class="wifiBtn btn btn-default btn-lg active">
+                                <span class="glyphicon glyphicon-signal"></span> WIFI
                             </button>
                         </div>
                         <div class="col-sm-3">
                             <button type="button" class="hoodBtn btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-home"></span> Quartier
+                                <span class="glyphicon glyphicon-home"></span> QUARTIER
                                 </button>
                         </div>
                     </div>
@@ -107,16 +118,52 @@
 
                 <!--  Page Accueil 2 -->
                 <div id="accueil_ville2" class="section">
-                        <h1>Accueil Ville 2</h1>
+                    <div class="row" id="btnA2">
+                        <div class="col-sm-3">
+                            <button type="button" class="a21Btn btn btn-default btn-lg active">
+                                <span class="glyphicon glyphicon-random"></span> QUELQUES CHIFFRES
+                            </button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="a22Btn btn btn-default btn-lg">
+                                <span class="glyphicon glyphicon-time"></span> QUARTIER
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row" id="zoneA21">
+                        <div class="col-sm-3" id="a2Chart1">
+                            
+                        </div>
+                        <div class="col-sm-3" id="a2Chart2">
+                            
+                        </div>
+                        <div class="col-sm-4" id="a2Graph">
+                            
+                        </div>
+                        <div class="col-sm-2" id="a2Col">
+                            
+                        </div>
+                    </div>
+
+                    <div class="row" id="zoneA22">
+                        <div class="col-sm-6" id="a2Text1">
+                            
+                        </div>
+                        <div class="col-sm-6" id="a2Text2">
+                            
+                        </div>
+                        
+                    </div>
                 </div>
             
                 <!--  Start Durable Ligne -->
                 <div class="section">
-                    <div id="durable_depl" class="slide">
+                    <div id="durable_depl" class="slide" data-anchor="B.1">
                         <h1>Durable 1</h1>
                     </div>
 
-                    <div id="durable_educ" class="slide">
+                    <div id="durable_educ" class="slide" data-anchor="B.2">
                         <h1>Durable 2</h1>
                     </div>
 
@@ -124,11 +171,11 @@
 
                 <!--  Start Sociale Ligne -->
                 <div class="section">
-                    <div id="soc_depl" class="slide">
+                    <div id="soc_depl" class="slide" data-anchor="C.1">
                         <h1>Sociale 1</h1>
                     </div>
 
-                    <div id="soc_educ" class="slide">
+                    <div id="soc_educ" class="slide" data-anchor="C.2">
                         <h1>Sociale 2</h1>
                     </div>
 
@@ -136,11 +183,11 @@
 
                 <!--  Start Perf Ligne -->
                 <div class="section">
-                    <div id="perf_depl" class="slide">
+                    <div id="perf_depl" class="slide" data-anchor="D.1">
                         <h1>Perf 1</h1>
                     </div>
 
-                    <div id="perf_educ" class="slide">
+                    <div id="perf_educ" class="slide" data-anchor="D.2">
                         <h1>Perf 2</h1>
                     </div>
 
@@ -148,11 +195,11 @@
 
                 <!--  Start Connect Ligne -->
                 <div class="section">
-                    <div id="connect_depl" class="slide">
+                    <div id="connect_depl" class="slide" data-anchor="E.1">
                         <h1>Connect 1</h1>
                     </div>
 
-                    <div id="connect_educ" class="slide">
+                    <div id="connect_educ" class="slide" data-anchor="E.2">
                         <h1>Connect 2</h1>
                     </div>
                 </div>
@@ -164,28 +211,13 @@
     </body>
 
 
-    <!-- Script -->
+    <!-- Scripts -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
-
-    <script type="text/javascript">
-            $(document).ready(function() {
-                $('#fullpage').fullpage({
-                    verticalCentered: true,
-                    afterRender: function(){
-                        $('video').get(0).play();
-                    }
-                });
-            });
-    </script>
-
     <script type="text/javascript" src="js/lib/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 
     <script type="text/javascript" src="js/my.js"></script>
 

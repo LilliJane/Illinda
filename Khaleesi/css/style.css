@@ -1,14 +1,10 @@
-html,body {
-	background-color: #2f4155;
-}
-
 html {
 	font-family: sans-serif;
 	font-size:12px;
 	font-weight:normal;
 	font-weight:lighter;
 	color:#FFF;
-/*	-webkit-text-size-adjust: none;*/
+	-webkit-text-size-adjust: none;
 	
 }
 
@@ -16,12 +12,11 @@ body {
 	overflow:hidden;
 	height: 100%;
 	width: 100%;
+	background-color: red;
 }
 
-.page{
-	width:100%;
-	overflow: hidden;
-	/*position: relative;*/
+.slide h1 {
+	text-align: center;
 }
 
 /* Header fixe - Doit disparaitre a la 1ere page */
@@ -56,11 +51,32 @@ header {
 
 /* Menu Nav */
 
-#menu {/*border: solid 1px green;*/position:fixed;top:25px;right:40px;font-size:10px;color:#1d1d1b;z-index:1;}}
+#myMenu {
+	font-family: Trebuchet, sans-serif;
+	margin-top: 5%;
+	list-style-type:none;
+	margin-right: 4%;
+}
+
+#myMenu li {
+	background-color: #fff;
+	text-align: right;
+	padding-right: 10%;
+}
+
+
+
+a {
+
+	color: #ff6b6b !important;
+}
+
+
+/*#menu {position:fixed;top:25px;right:40px;font-size:10px;color:#1d1d1b;z-index:1;}}
 #menu ul li {list-style-type: none; height:13px;}
 #menu .pageName {color:#ff6b6b;text-transform: uppercase; text-align: right; display:inline-block; width:100px;vertical-align:1px;padding:1px 5px;}
 #menu ul {list-style-type:none;}
-#menu ul li ul{display:inline-block;width:110px; /*border: solid 1px green;*/}
+#menu ul li ul{display:inline-block;width:110px;}
 #menu ul li ul li{display:block;position: relative;width:10px;height:10px;float:left;margin-right:3px;}
 #menu ul li ul li a{
 	position: relative;
@@ -81,7 +97,7 @@ header {
 a.current{
     opacity : 0.8;
     filter : alpha(opacity=80);
-}
+}*/
 
 /* Page SAS */
 
@@ -212,4 +228,36 @@ article p {
 #topTwitter {
 	height: 25%;
 	width: 100%;
+}
+
+/* Page Ville2 */
+
+#accueil_ville2 {
+	background-color: #e5e5e5;
+}
+
+#btnA2 {
+	height: 6.5%;
+	margin-top: 10%;
+	margin-left: 2%;
+/*	border: solid 1px pink;*/
+}
+
+.a21Btn{
+	height: 100%;
+	width: 100%;
+}
+
+.a22Btn{
+	height: 100%;
+	width: 100%;
+}
+
+#zoneA21 {
+	/*border: solid 1px pink;*/
+	background-color: #fff;
+	margin-left: 2%;
+	margin-right: 1%;
+	height: 75% !important;
+	width: auto;
 }

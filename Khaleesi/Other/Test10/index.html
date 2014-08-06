@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Databuzz Team Prototype Web Site</title>
+        <meta name="author" content="Gil 'Ragnar' Felot" />
+        <meta content="http://illinda.com" name="identifier-url">
+        <meta content="FR" http-equiv="content-language">
+        <meta name="description" content="DataViz pour Bordeaux" />
+        <meta name="keywords" content="DataViz, Bordeaux, Graphique" />
+        <meta name="Resource-type" content="Document" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/ico" href="img/favicon.ico" />       
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" >
+
+    </head>
+    
+    <body>
+    
+        <wrapper>
+            
+                <div class="row header" id="bandeau">
+
+                    <img class="logo_illinda col-sm-1" src="img/logo_w.png">
+
+                    <img class="logo_header col-sm-offset-4 col-sm-3" src="img/logo_header.png">
+            
+                    <div class="col-sm-3" id="menu"> <!-- Nav -->
+                        <ul>
+                            <li>
+                                <div class="pageName">Accueil</div>
+                                <ul>
+                                    <li><a page="1" block="1" href="javascript:;" onclick=""></a> </li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="pageName">Durable</div> 
+                                <ul>
+                                    <li><a page="4" block="1" href="javascript:;" onclick=""></a> </li>
+                                    <li><a page="4" block="2" href="javascript:;" onclick=""></a> </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="pageName">Sociale</div>
+                                <ul>
+                                    <li><a page="5" block="1" href="javascript:;" onclick=""></a> </li>
+                                    <li><a page="5" block="2" href="javascript:;" onclick=""></a> </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="pageName">Performante</div>
+                                <ul>
+                                    <li><a page="6" block="1" href="javascript:;" onclick=""></a> </li>
+                                    <li><a page="6" block="2" href="javascript:;" onclick=""></a> </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="pageName">Connectée</div>
+                                <ul>
+                                    <li><a page="7" block="1" href="javascript:;" onclick=""></a> </li>
+                                    <li><a page="7" block="2" href="javascript:;" onclick=""></a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                            
+                    </div> <!-- End Nav -->
+
+                </div>
+          
+
+            <div id="fullpage">
+
+            <!--  Start Accueil -->
+            <div  class="section accueil_sas" id="page_1">
+                <div class="row logo_top">
+                    <img src="img/logo_w.png" class="col-sm-offset-5 col-sm-1">                
+                </div>
+
+                <div class="row">
+                    <div class="video_accueil col-sm-offset-3 col-sm-5" >
+                        <video autoplay loop muted="false">
+                            <source src="img/anim_logo.mp4" type="video/mp4">
+                            <source src="img/anim_logo.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="wow fadeInLeftBig row baseline">
+                    <article class="col-sm-offset-2 col-sm-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div id="accueil_ville1" class="section">
+                    <h1>Accueil Ville 1</h1>
+            </div>
+
+            <div id="accueil_ville2" class="section">
+                    <h1>Accueil Ville 2</h1>
+            </div>
+        
+            <!--  Start Durable Ligne -->
+            <div class="section">
+                <div id="durable_depl" class="slide">
+                    <h1>Durable 1</h1>
+                </div>
+
+                <div id="durable_educ" class="slide">
+                    <h1>Durable 2</h1>
+                </div>
+
+            </div>
+
+            <!--  Start Sociale Ligne -->
+            <div class="section">
+                <div id="soc_depl" class="slide">
+                    <h1>Sociale 1</h1>
+                </div>
+
+                <div id="soc_educ" class="slide">
+                    <h1>Sociale 2</h1>
+                </div>
+
+            </div>
+
+            <!--  Start Perf Ligne -->
+            <div class="section">
+                <div id="perf_depl" class="slide">
+                    <h1>Perf 1</h1>
+                </div>
+
+                <div id="perf_educ" class="slide">
+                    <h1>Perf 2</h1>
+                </div>
+
+            </div>
+
+            <!--  Start Connect Ligne -->
+            <div class="section">
+                <div id="connect_depl" class="slide">
+                    <h1>Connect 1</h1>
+                </div>
+
+                <div id="connect_educ" class="slide">
+                    <h1>Connect 2</h1>
+                </div>
+
+            </div>
+
+        </div> <!-- Fin Div fullPage -->
+
+        </wrapper>
+
+    </body>
+
+
+    <!-- Script -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+
+    <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    verticalCentered: true,
+                    afterRender: function(){
+                        $('video').get(0).play();
+                    }
+                });
+            });
+    </script>
+
+    <script type="text/javascript" src="js/lib/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+  <!--   // <script type="text/javascript" src="js/nav.js"></script> -->
+
+</html>
