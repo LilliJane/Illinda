@@ -21,9 +21,6 @@
         <td><%= tweet.status %></td>
         <td><%= tweet.username %></td>
         <td><%= tweet.userscreen %></td>
-        <td><%= link_to 'Show', tweet %></td>
-        <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
-        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
