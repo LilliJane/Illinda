@@ -1,8 +1,11 @@
-$(document).ready( function() {
 
-	var margin = {top: 2, right: 2, bottom: 2, left: 2},
-	    width = 150,
-	    height = 50,
+	var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    	width = 700,
+    	height = 500;
+    console.log(width);
+    console.log(height);
+    //  width = 960 * (1 - ((margin.left + margin.right) / 100)),
+    // height = 500 * (1 - ((margin.top + margin.bottom) / 100));
 
 	var x = d3.scale.ordinal()
 	    .rangeRoundBands([0, width], .1);
@@ -19,14 +22,13 @@ $(document).ready( function() {
 	    .orient("left")
 	    .ticks(10, "%");
 
-	var svg = d3.select("#graph")
-		.style('background-color', '#ff6b6b')
-	    .attr("width", '100%')
-	    .attr("height", '100%')
+	var svg = d3.select("body").append("svg")
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
 	  .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	d3.tsv("/data/data.tsv", type, function(error, data) {
+	d3.tsv("data.tsv", type, function(error, data) {
 	  x.domain(data.map(function(d) { return d.letter; }));
 	  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
 
@@ -60,7 +62,3 @@ $(document).ready( function() {
 	  d.frequency = +d.frequency;
 	  return d;
 	}
-
-
-
-});

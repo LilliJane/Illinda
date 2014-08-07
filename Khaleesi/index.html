@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Databuzz Team Prototype Web Site</title>
-    <meta name="author" content="Gil 'Ragnar' Felot" />
-    <meta content="http://illinda.com" name="identifier-url">
-    <meta content="FR" http-equiv="content-language">
-    <meta name="description" content="DataViz pour Bordeaux" />
-    <meta name="keywords" content="DataViz, Bordeaux, Graphique" />
-    <meta name="Resource-type" content="Document" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Databuzz Team Prototype Web Site</title>
+        <meta name="author" content="Gil 'Ragnar' Felot" />
+        <meta content="http://illinda.com" name="identifier-url">
+        <meta content="FR" http-equiv="content-language">
+        <meta name="description" content="DataViz pour Bordeaux" />
+        <meta name="keywords" content="DataViz, Bordeaux, Graphique" />
+        <meta name="Resource-type" content="Document" />
 
-    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+        <link rel="icon" type="image/ico" href="img/favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/col.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/col.css" /> <!-- test CSS pour graph -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 
     </head>
     <body>
@@ -134,7 +134,13 @@
                     </div>
 
                     <div class="row" id="zoneA21">
-                        <div class="col-sm-3" id="a2Chart1">
+                        <div class="col-sm-6" id="graph">
+                            <!-- emplacement du graph test -->
+                        </div>
+
+
+                        
+                        <!-- <div class="col-sm-3" id="a2Chart1">
                             
                         </div>
                         <div class="col-sm-3" id="a2Chart2">
@@ -145,10 +151,10 @@
                         </div>
                         <div class="col-sm-2" id="a2Col">
                             
-                        </div>
+                        </div> -->
                     </div>
 
-                    <div class="row" id="zoneA22">
+                   <!--  <div class="row" id="zoneA22">
                         <div class="col-sm-6" id="a2Text1">
                             
                         </div>
@@ -156,7 +162,7 @@
                             
                         </div>
                         
-                    </div>
+                    </div> -->
                 </div>
             
                 <!--  Start Durable Ligne -->
@@ -221,6 +227,10 @@
     <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/lib/wow.min.js"></script>
 
+    <!-- Script pour test Graph -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/graph.js"></script>
+    
     <script type="text/javascript" src="js/my.js"></script>
 
 </html>
