@@ -60,7 +60,7 @@
 
                     <div class="row">
                         <div class="col-sm-offset-3 col-sm-6" id="video_accueil"> 
-                            <video autoplay loop muted="false" >
+                            <video autoplay loop muted="false" preload="auto" autoplay="true">
                                 <source src="img/anim_logo.mp4" type="video/mp4">
                                 <source src="img/anim_logo.webm" type="video/webm">
                                 <source src="img/anim_logo.ogg" type="video/ogg">
@@ -134,7 +134,9 @@
                     </div>
 
                     <div class="row" id="zoneA21">
-                        <div class="col-sm-6" id="graph">
+                        <div class="col-sm-6">
+                            <div id="toto">
+                            </div>
                             <!-- emplacement du graph test -->
                         </div>
 
@@ -168,7 +170,9 @@
                 <!--  Start Durable Ligne -->
                 <div class="section">
                     <div id="durable_depl" class="slide" data-anchor="B.1">
-                        <h1>Durable 1</h1>
+                        <div id="graph2">
+                            
+                        </div>
                     </div>
 
                     <div id="durable_educ" class="slide" data-anchor="B.2">
@@ -229,7 +233,7 @@
 
     <!-- Script pour test Graph -->
     <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script type="text/javascript" src="js/graph.js"></script>
+    <script type="text/javascript" src="graph.js"></script>
     
     <script type="text/javascript" src="js/my.js"></script>
 

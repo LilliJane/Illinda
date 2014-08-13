@@ -1,4 +1,9 @@
-.bar {
+#toto {
+	height: 500px;
+	width: 1500px;
+}
+
+/*.bar {
   fill: steelblue;
 }
 
@@ -19,9 +24,4 @@
 
 .x.axis path {
   display: none;
-}
-
-#test {
-	height: 50%;
-	width: 70%;
-}
+}*/

@@ -1,66 +1,45 @@
-$(document).ready( function() {
+ d3.csv("data.csv", function(data) {
 
-	var margin = {top: 2, right: 2, bottom: 2, left: 2},
-	    width = 150,
-	    height = 50,
+ 	var h = 600;
+ 	var w = 500;
 
-	var x = d3.scale.ordinal()
-	    .rangeRoundBands([0, width], .1);
+ 	var heightScale = d3.scale.linear()
+ 					.domain([0, 0.20800])
+ 					.range([0, h]);
 
-	var y = d3.scale.linear()
-	    .range([height, 0]);
+ 	var colorScale = d3.scale.linear()
+ 					.domain([0, 0.20800])
+ 					.range(["red", "orange"]);
 
-	var xAxis = d3.svg.axis()
-	    .scale(x)
-	    .orient("bottom");
+ 	var axis = d3.svg.axis()
+ 				.ticks(5)
+				.scale(heightScale);
 
-	var yAxis = d3.svg.axis()
-	    .scale(y)
-	    .orient("left")
-	    .ticks(10, "%");
-
-	var svg = d3.select("#graph")
-		.style('background-color', '#ff6b6b')
-	    .attr("width", '100%')
-	    .attr("height", '100%')
-	  .append("g")
-	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-	d3.tsv("/data/data.tsv", type, function(error, data) {
-	  x.domain(data.map(function(d) { return d.letter; }));
-	  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
-
-	  svg.append("g")
-	      .attr("class", "x axis")
-	      .attr("transform", "translate(0," + height + ")")
-	      .call(xAxis);
-
-	  svg.append("g")
-	      .attr("class", "y axis")
-	      .call(yAxis)
-	    .append("text")
-	      .attr("transform", "rotate(-90)")
-	      .attr("y", 6)
-	      .attr("dy", ".71em")
-	      .style("text-anchor", "end")
-	      .text("Frequency");
-
-	  svg.selectAll(".bar")
-	      .data(data)
-	    .enter().append("rect")
-	      .attr("class", "bar")
-	      .attr("x", function(d) { return x(d.letter); })
-	      .attr("width", x.rangeBand())
-	      .attr("y", function(d) { return y(d.frequency); })
-	      .attr("height", function(d) { return height - y(d.frequency); });
-
-	});
-
-	function type(d) {
-	  d.frequency = +d.frequency;
-	  return d;
-	}
+ 	var svg = d3.select("#graph")
+ 				.append("svg")
+ 				.attr("width", w)
+ 				.attr("height", h)
+ 				.append("g")
+ 				.attr("transform", "translate(20, 10)")
+ 				
 
 
+ 	var bars = svg.selectAll("rect") 
+	 		.data(data)
+	 		.enter()
+	 			.append("rect")
+	 			.attr("height", function (d) {
+	 				return heightScale(d.frequency);
+	 			})
+		 		.attr("width", 10)
+		 		.attr("x", function (d, i) {
+		 			return i * 15
+		 		})
+		 		.attr("fill", function (d) {
+		 			return colorScale(d.frequency)
+		 		});
 
-});
+	svg.append("g")
+		.attr("transform", "translate(0, 500)")
+		.call(axis)
+ })
