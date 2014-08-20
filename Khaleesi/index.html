@@ -3,7 +3,7 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Databuzz Team Prototype Web Site</title>
+        <title>Databuzz Team Prototype2 Web Site</title>
         <meta name="author" content="Gil 'Ragnar' Felot" />
         <meta content="http://illinda.com" name="identifier-url">
         <meta content="FR" http-equiv="content-language">
@@ -14,227 +14,59 @@
         <link rel="icon" type="image/ico" href="img/favicon.ico" />
 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/col.css" /> <!-- test CSS pour graph -->
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 
     </head>
+
     <body>
-        
         <wrapper>
-
-            <header class="row">
-                <div class="col-sm-1 logo_illinda">
-                    <img src="img/logo_w.png">
-                </div>
-
-                <div class="col-sm-offset-4 col-sm-2 logo_header">
-                    <img src="img/logo_header.png">
+            <div id="fullPage">
+                <div class="section" id="page0">
+                    <video autoplay="true" loop preload="auto">
+                        <source src="img/anim_logo.mp4" type="video/mp4" />
+                        <source src="img/anim_logo.webm" type="video/webm" />
+                        <source src="img/anim_logo.ogg" type="video/ogg" />
+                    </video>
                 </div>
                 
-                <!-- Menu-->
-                <div class="col-sm-offset-2 col-sm-3">
-                    <ul id="myMenu">
-                        <li data-menuanchor="A0" class="active"><a href="#A0">ACCUEIL</a></li>
-                        <li data-menuanchor="A1"><a href="#A1">SAS1</a></li>
-                        <li data-menuanchor="A2"><a href="#A2">SAS2</a></li>
-                        <li data-menuanchor="B1"><a href="#B1">DURABLE</a></li>
-                        <li data-menuanchor="C1"><a href="#C1">SOCIALE</a></li>
-                        <li data-menuanchor="D1"><a href="#D1">PERF</a></li>
-                        <li data-menuanchor="E1"><a href="#E1">CONNECT</a></li>
-                    </ul>
+                <div class="section" id="page1">
+                    
                 </div>
 
-            </header>
-
-            <div id="fullpage">
-
-                <!--  Start Accueil -->
-                <div id="accueil_sas" class="section">
-                    <div class="row logo_sas">
-                        <div class="col-sm-offset-5 col-sm-1">
-                            <img src="img/logo_w.png" class="wow fadeInLeftBig">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-offset-3 col-sm-6" id="video_accueil"> 
-                            <video autoplay loop muted="false" preload="auto" autoplay="true">
-                                <source src="img/anim_logo.mp4" type="video/mp4">
-                                <source src="img/anim_logo.webm" type="video/webm">
-                                <source src="img/anim_logo.ogg" type="video/ogg">
-                            </video>
-                        </div>    
-                    </div>
-                
-                    <div class="row">
-                        <div class="col-sm-offset-3 col-sm-6">
-                            <div id="baseline" class="wow fadeInLeftBig">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="section" id="page2">
+                    
                 </div>
 
-
-                <!--  Page Accueil 1 -->
-                <div id="accueil_ville1" class="section">
-                    <div class="row" id="btnA1">
-                        <div class="col-sm-3">
-                            <button type="button" class="wifiBtn btn btn-default btn-lg active">
-                                <span class="glyphicon glyphicon-signal"></span> WIFI
-                            </button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button type="button" class="hoodBtn btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-home"></span> QUARTIER
-                                </button>
-                        </div>
-                    </div>
-                    <div class="row" id="zoneA1">
-                        <div class="col-sm-6 zoneA1Wifi" id="zoneA1graph">
-                            
-                        </div>
-                        <div class="col-sm-6" id="zoneA2">
-                            <div class="row" id="infoA1">
-                                <article class="col-sm-8" id="articleAccueil">
-                                    <h1>Lorem Ipsum dolor sit</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    </p>
-                                    <h1>Lorem Ipsum dolor sit</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    </p>                                       
-                                </article>        
-                                <div class="col-sm-12">
-                                    <img src="img/topTwitter.png" id="topTwitter" class="col-sm-12">
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--  Page Accueil 2 -->
-                <div id="accueil_ville2" class="section">
-                    <div class="row" id="btnA2">
-                        <div class="col-sm-3">
-                            <button type="button" class="a21Btn btn btn-default btn-lg active">
-                                <span class="glyphicon glyphicon-random"></span> QUELQUES CHIFFRES
-                            </button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button type="button" class="a22Btn btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-time"></span> QUARTIER
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="row" id="zoneA21">
-                        <div class="col-sm-6">
-                            <div id="toto">
-                            </div>
-                            <!-- emplacement du graph test -->
-                        </div>
-
-
-                        
-                        <!-- <div class="col-sm-3" id="a2Chart1">
-                            
-                        </div>
-                        <div class="col-sm-3" id="a2Chart2">
-                            
-                        </div>
-                        <div class="col-sm-4" id="a2Graph">
-                            
-                        </div>
-                        <div class="col-sm-2" id="a2Col">
-                            
-                        </div> -->
-                    </div>
-
-                   <!--  <div class="row" id="zoneA22">
-                        <div class="col-sm-6" id="a2Text1">
-                            
-                        </div>
-                        <div class="col-sm-6" id="a2Text2">
-                            
-                        </div>
-                        
-                    </div> -->
-                </div>
-            
-                <!--  Start Durable Ligne -->
-                <div class="section">
-                    <div id="durable_depl" class="slide" data-anchor="B.1">
-                        <div id="graph2">
-                            
-                        </div>
-                    </div>
-
-                    <div id="durable_educ" class="slide" data-anchor="B.2">
-                        <h1>Durable 2</h1>
-                    </div>
-
-                </div>
-
-                <!--  Start Sociale Ligne -->
-                <div class="section">
-                    <div id="soc_depl" class="slide" data-anchor="C.1">
-                        <h1>Sociale 1</h1>
-                    </div>
-
-                    <div id="soc_educ" class="slide" data-anchor="C.2">
-                        <h1>Sociale 2</h1>
-                    </div>
-
-                </div>
-
-                <!--  Start Perf Ligne -->
-                <div class="section">
-                    <div id="perf_depl" class="slide" data-anchor="D.1">
-                        <h1>Perf 1</h1>
-                    </div>
-
-                    <div id="perf_educ" class="slide" data-anchor="D.2">
-                        <h1>Perf 2</h1>
-                    </div>
-
-                </div>
-
-                <!--  Start Connect Ligne -->
-                <div class="section">
-                    <div id="connect_depl" class="slide" data-anchor="E.1">
-                        <h1>Connect 1</h1>
-                    </div>
-
-                    <div id="connect_educ" class="slide" data-anchor="E.2">
-                        <h1>Connect 2</h1>
-                    </div>
-                </div>
-
-            </div> <!-- Fin Div fullPage -->
+            </div>
 
         </wrapper>
 
+        <!-- Scripts Lib -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="js/lib/wow.min.js"></script>
+
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+                afterRender: function(){
+
+                    //playing the video
+                    $('video').get(0).play();
+                }
+            });
+        });
+      </script>
+
+        <!-- Scripts Perso -->
+        <script type="text/javascript" src="js/my.js"></script>
+
     </body>
-
-
-    <!-- Scripts -->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="js/lib/wow.min.js"></script>
-
-    <!-- Script pour test Graph -->
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script type="text/javascript" src="graph.js"></script>
-    
-    <script type="text/javascript" src="js/my.js"></script>
 
 </html>
