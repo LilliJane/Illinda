@@ -14,13 +14,15 @@ Invite me to a coffee
 
 Customizations of the plugin available upon request for some reasonable price. <a href="http://alvarotrigo.com/#contact-page">Contact me</a>.
 
+Would you like to have a website using fullpage.js functionality but you don't know how to use it? I can do it for you for a reasonable price. <a href="http://alvarotrigo.com/#contact-page">Contact me</a>.
+
 ## Introduction
 Suggestion are more than welcome, not only for feature requests but also for coding style improvements.
 Let's make this a great plugin to make people's lives easier!
 
 ## Compatibility
 fullPage.js is fully functional on all modern browsers, as well as some old ones such as Internet Explorer 8, 9, Opera 12, etc.
-It works with browsers with CSS3 support and with the ones who don't have it, making it ideal for old browsers compatibility.
+It works with browsers with CSS3 support and with the ones which don't have it, making it ideal for old browsers compatibility.
 
 ## Usage
 As you can see in the example files, you will need to include the JavaScript file `jquery.fullPage.js` (or the minified version `jquery.fullPage.min.js`) and the css file `jquery.fullPage.css` of the plugin, as well as [jQuery](http://jquery.com/). Optionally, you can add the [jQuery UI library](http://jqueryui.com/) in case you want to use other easing effects apart from the ones included in the jQuery library which are the `linear` or `swing` effects. (`easeInQuart` is active by default, so you would need [jQuery UI library](http://jqueryui.com/) or the customized version  which is included in the vendors folder under the name `jquery.easings.min.js`.)
@@ -384,7 +386,7 @@ Example:
 
 ```javascript
 	$('#fullpage').fullpage({
-		onLeave: function(index, direction){
+		onLeave: function(index, nextIndex, direction){
 			//after leaving section 2
 			if(index == '2' && direction =='down'){
 				alert("Going to section 3!");
@@ -492,17 +494,19 @@ If you want your page to be listed here. Please <a href="mailto:alvaro@alvarotri
 
 [![Sony](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/sony.gif)](http://www.sony-asia.com/microsite/mdr-10/)
 [![Vodafone](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/vodafone.png)](https://www.xone.vodafone.com)
-![docspera](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/docspera.png)
+[![British Airways](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/british-airways-fullpage.gif)](http://www.britishairways.com/en-gb/information/travel-classes/experience-our-cabins)
 [![scribe](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/scribe.png)](http://usescribe.com/)
 [![xepler](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/xepler.png)](http://xepler.com/services)
 [![matrimonia](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/matrimonia.png)](http://www.matrimonia.rs/)
 [![myMattioli](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/myMattioli-3.png)](http://mymattioli.it/)
 [![redd](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/redd.png)](http://www.getredd.com/)
 
+- http://www.britishairways.com/en-gb/information/travel-classes/experience-our-cabins
 - http://www.sony-asia.com/microsite/mdr-10/
 - https://www.xone.vodafone.com
 - http://www.saltaboombox.com.ar
 - http://snapzheimer.org/
+- http://www.newjumoconcept.com/
 - https://moneytree.jp/
 - http://www.restaurantwoods.nl/
 - http://collection.madeofsundays.com
@@ -551,15 +555,24 @@ If you want your page to be listed here. Please <a href="mailto:alvaro@alvarotri
 - http://spell-star.appspot.com/
 - http://yizeng.me/
 - http://rienpipe.es/
+- http://neolearning.eu/
 - http://sunfishlabs.com/
+- http://unabridgedsoftware.com/
 - http://wc2014.plnwrx.com/
 - http://organice.io/
+- http://alchemy-research.com/
 - http://www.cima-ecuador.com/
 - http://www.rienpipe.es
+- http://atlanticcorp.us/
 - http://bootstrap.tunerus.ru/nastroyka_pianino/
 - http://moysport.ru/
 - http://www.norttilaakso.fi/
 - http://wcfixtures.co.uk/
+- http://www.dopehustleinc.com/default.php
+- http://themify.me/demo/#theme=fullpane
+- http://bragdonfarm.com/
+- http://www.paperdeermusic.com/
+- http://vfwpost1.org/
 
 ## Donations
 Donations would be more than welcome :)
