@@ -1,5 +1,26 @@
+body {
+	overflow:hidden;
+	height: 100%;
+	width: 100%;
+}
+
+#menu {
+	height: 15%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+#menu ul {
+	list-style-type:none;
+}
+
 video {
 	height: 50%;
 	width: 50%;
 	margin-left: 25%;
+}
+
+h1 {
+	margin-left: 40% !important;
 }
