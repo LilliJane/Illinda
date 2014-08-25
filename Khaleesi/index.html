@@ -17,13 +17,14 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
 
     </head>
 
     <body>
         <wrapper>
 
-            <header>
+            <!-- <header>
                 <div id="menu">
                     <ul id="myMenu">
                         <li data-menuanchor="accueil" class="active">
@@ -33,7 +34,7 @@
                             <a href="#dataflux">Page 1</a>
                         </li>
                         <li data-menuanchor="turfu">
-                            <a href="#turfu">Page 2</a>
+                            <a href="#turfu/1">Page 2</a>
                         </li>
                     </ul>
                 </div>
@@ -41,13 +42,18 @@
                 <div id="logo">
                     
                 </div>
-            </header>
+            </header> -->
 
             <div id="fullPage">
 
             <!-- Accueil -->
                 <div class="section" id="page0">
-                    <video autoplay="true" loop muted preload="auto">
+                    <video id='backgroundVideo' autoplay="true" loop muted preload="auto">
+                        <source src="img/anim_logo.mp4" type="video/mp4" />
+                        <source src="img/anim_logo.webm" type="video/webm" />
+                        <source src="img/anim_logo.ogg" type="video/ogg" />
+                    </video>
+                    <video id='frontVideo' autoplay="true" loop muted preload="auto">
                         <source src="img/anim_logo.mp4" type="video/mp4" />
                         <source src="img/anim_logo.webm" type="video/webm" />
                         <source src="img/anim_logo.ogg" type="video/ogg" />
@@ -62,15 +68,15 @@
 
             <!-- Page 2 -->
                 <div class="section" id="page2">
-                    <div class="slide">
+                    <div id="pageLeft" class="slide">
                         <h1>Test</h1>
                     </div>
 
-                    <div class="slide active">
+                    <div id="pageMid" class="slide active">
                         <h1>42</h1>
                     </div>
 
-                    <div class="slide">
+                    <div id="pageRight" class="slide">
                         <h1>Data</h1>
                     </div>
                     
