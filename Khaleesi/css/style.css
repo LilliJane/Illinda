@@ -34,3 +34,8 @@ body {
 h1 {
 	margin-left: 40% !important;
 }
+
+canvas {
+	margin: auto;
+	text-align: center;
+}
