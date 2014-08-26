@@ -15,20 +15,12 @@ body {
 	list-style-type:none;
 }
 
-#frontVideo {
+video {
 	position: relative;
 	height: 50%;
 	width: 50%;
 	margin-left: 25%;
 	z-index: 1;
-}
-
-#backgroundVideo {
-	position: absolute;
-	height: auto;
-	width: 100%;
-	z-index: 0;
-	background-size: auto;
 }
 
 h1 {

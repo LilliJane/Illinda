@@ -427,7 +427,6 @@
 		var touchEndX = 0;
 
 		/* Detecting touch events
-
 		* As we are changing the top property of the page on scrolling, we can not use the traditional way to detect it.
 		* This way, the touchstart and the touch moves shows an small difference between them which is the
 		* used one to determine the direction.

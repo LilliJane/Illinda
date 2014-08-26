@@ -17,14 +17,13 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
 
     </head>
 
     <body>
         <wrapper>
 
-            <!-- <header>
+            <header>
                 <div id="menu">
                     <ul id="myMenu">
                         <li data-menuanchor="accueil" class="active">
@@ -42,18 +41,13 @@
                 <div id="logo">
                     
                 </div>
-            </header> -->
+            </header>
 
             <div id="fullPage">
 
             <!-- Accueil -->
                 <div class="section" id="page0">
-                    <video id='backgroundVideo' autoplay="true" loop muted preload="auto">
-                        <source src="img/anim_logo.mp4" type="video/mp4" />
-                        <source src="img/anim_logo.webm" type="video/webm" />
-                        <source src="img/anim_logo.ogg" type="video/ogg" />
-                    </video>
-                    <video id='frontVideo' autoplay="true" loop muted preload="auto">
+                    <video autoplay="true" loop preload="auto">
                         <source src="img/anim_logo.mp4" type="video/mp4" />
                         <source src="img/anim_logo.webm" type="video/webm" />
                         <source src="img/anim_logo.ogg" type="video/ogg" />
@@ -63,10 +57,24 @@
 
             <!-- Page 1 -->    
                 <div class="section" id="page1">
-		  <canvas id="Test" data-processing-sources="Test.pde" 
-			  width="640" height="360">
-  <!-- canvas data-processing-sources="vis.pde"></canvas -->
-<!-- iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AjUbYzkbYRaadHdFMDdaVEFRbWptdXlHczN3UThlNFE&font=Bevan-PotanoSans&maptype=toner&lang=fr&debug=true&height=650' width='100%' height='650' frameborder='0'></iframe-->
+                    <div id="pageOne" class="slide">
+                        <h1>Yolo</h1>
+			<canvas id="Test" data-processing-sources="Test.pde" 
+				width="640" height="360">
+                    </div>
+
+                    <div id="pageTwo" class="slide">
+                        <h1>Yala</h1>
+                    </div>
+
+                    <div id="pageThree" class="slide">
+                        <h1>Yili</h1>
+                    </div>
+
+                    <div id="pageFour" class="slide">
+                        <h1>Yulu</h1>
+                    </div>
+
                 </div>
 
             <!-- Page 2 -->
@@ -92,7 +100,6 @@
         <!-- Scripts Lib -->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
         <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
         <script type="text/javascript" src="js/lib/wow.min.js"></script>
