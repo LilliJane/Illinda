@@ -9,8 +9,7 @@ $(document).ready(function() {
         afterRender: function() {
 
             //playing the video
-            $('#frontVideo').get(0).play();
-            $('#backgroundVideo').get(0).play();
+            $('video').get(0).play();
         }
     });
     
