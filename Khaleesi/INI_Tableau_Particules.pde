@@ -4,11 +4,11 @@ float[] vx;
 float[] vy;
 float[] d;
 
-int nb = 150;
+int nb = 250;
 
 void setup()
 { 
-  size(800, 800);
+  size(1600, 1600);
   x = new float[nb];
   y = new float[nb];
   vx = new float[nb];
@@ -19,9 +19,9 @@ void setup()
   {
     x[i] = random(width);
     y[i] = random(height);
-    vx[i] = random(-2, 2);
-    vy[i] = random(-2, 2);
-    d[i] = random(10, 20);
+    vx[i] = random(-5, 5);
+    vy[i] = random(-3, 3);
+    d[i] = random(10, 40);
   }
 }
 
@@ -67,14 +67,13 @@ for(int i=0; i<nb; i++)
       line(x[i],y[i],x[j],y[j]);
     }
   }
+  drawSelectedDot();
 }
 
 
 }
 
-void keyPressed()
+void drawSelectedDot()
 {
-  saveFrame("cells");
+ 
 }
-
-
