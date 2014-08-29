@@ -15,12 +15,22 @@ body {
 	list-style-type:none;
 }
 
-video {
-	position: relative;
-	height: 50%;
+#logo {
+	height: 10%;
 	width: 50%;
 	margin-left: 25%;
-	z-index: 1;
+	margin-bottom: 25%;
+}
+
+video {
+	border: solid 1px green;
+	position: relative;
+	width: 90%;
+	margin-left: 5%;
+}
+
+#town {
+	width: 100%;
 }
 
 h1 {
