@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Databuzz Team Prototype2 Web Site</title>
+        <meta name="author" content="Gil 'Ragnar' Felot" />
+        <meta content="http://illinda.com" name="identifier-url">
+        <meta content="FR" http-equiv="content-language">
+        <meta name="description" content="DataViz pour Bordeaux" />
+        <meta name="keywords" content="DataViz, Bordeaux, Graphique" />
+        <meta name="Resource-type" content="Document" />
+
+        <link rel="icon" type="image/ico" href="img/favicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+
+    </head>
+
+    <body>
+        <wrapper>
+
+            <header>
+                <div id="menu">
+                    <h1>ILLINDA</h1>
+                    <ul id="myMenu">
+                        <li data-menuanchor="accueil" class="active">
+                            <a id="menu1" href="#accueil">Presentation</a>
+                        </li>
+                        <li data-menuanchor="dataflux">
+                            <a id="menu2" href="#dataflux">Data Flux</a>
+                        </li>
+                        <li data-menuanchor="turfu">
+                            <a id="menu3" href="#turfu/1">Le Futur</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div id="fullPage">
+
+            <!-- Accueil -->
+                <div class="section" id="page0">
+                    <div class="row" >
+                        <div class="col-sm-offset-5 col-sm-2">
+                            <img src="img/illindaLogo.png" id="logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <video autoplay="true" loop preload="auto">
+                            <source src="img/anim_logo.mp4" type="video/mp4" />
+                            <source src="img/anim_logo.webm" type="video/webm" />
+                            <source src="img/anim_logo.ogg" type="video/ogg" />
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-sm-offset-6 col-sm-1">
+                                <img id="arrowDown1" src="img/arrowDown.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-offset-6 col-sm-1">
+                                <img id="arrowDown2" src="img/arrowDown.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-offset-6 col-sm-1">
+                                <img id="arrowDown3" src="img/arrowDown.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="img/town.png" id="town">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+            <!-- Page 1 -->    
+                <div class="section" id="page1">
+                    <div id="pageOne" class="slide">
+                        <h1>La fete du vin</H1>
+			<canvas id="Test" data-processing-sources="sketch/Test.pde" 
+				width="1600" height="850"></canvas>
+                    </div>
+
+                    <div id="pageTwo" class="slide">
+                        <h1>Une journee en semaine</h1>
+			<canvas id="INITableauParticules" data-processing-sources="sketch/INI_Tableau_Particules.pde"
+				width="1600" height="850"></canvas>
+                    </div>
+
+                    <div id="pageThree" class="slide">
+                        <h1>Un week-end</h1>
+			<canvas id="slide" data-processing-sources="sketch/slide.pde"
+				width="1600" height="850">
+			  <!--source src="img/Bordeaux.jpg" type="image/jpg"></source-->
+			</canvas>
+                    </div>
+
+                    <div id="pageFour" class="slide">
+                        <h1>La fete de la musique lors des Epicuriales</h1>
+                    </div>
+
+                </div>
+
+            <!-- Page 2 -->
+                <div class="section" id="page2">
+                    <div id="pageLeft" class="slide">
+                        <h1>Test</h1>
+                    </div>
+
+                    <div id="pageMid" class="slide active">
+                        <h1>42</h1>
+                    </div>
+
+                    <div id="pageRight" class="slide">
+                        <h1>Data</h1>
+                    </div>
+                    
+                </div>
+
+            </div> <!-- End FullPage -->
+
+        </wrapper>
+
+        <!-- Scripts Lib -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="js/lib/wow.min.js"></script>
+        <script type="text/javascript" src="js/processing.js"></script>
+	<script type="text/javascript" src="js/p5.min.js"></script>
+
+        <!-- Scripts Perso -->
+        <script type="text/javascript" src="js/my.js"></script>
+
+    </body>
+
+</html>
