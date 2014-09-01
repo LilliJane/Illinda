@@ -13,5 +13,9 @@ $(document).ready(function() {
         },
         scrollOverflow: true
     });
+
+    $('#arrowDown1').addClass('animated fadeInDown');
+    $('#arrowDown2').addClass('animated fadeInDown');
+    $('#arrowDown3').addClass('animated fadeInDown');
     
 });
