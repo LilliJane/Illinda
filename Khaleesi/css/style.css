@@ -11,8 +11,23 @@ body {
 	z-index: 1;
 }
 
+#menu h1 {
+	margin-left: 2% !important;
+	font-size: 2em;
+	text-decoration: underline;
+}
+
 #menu ul {
 	list-style-type:none;
+}
+
+#menu ul li {
+	font-size: 1.2em;
+}
+
+#menu ul li a {
+	color: #000;
+	text-decoration: none;
 }
 
 #logo {
