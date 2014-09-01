@@ -8,7 +8,7 @@ int nb = 250;
 
 void setup()
 { 
-  size(1600, 1600);
+  size(1600, 850);
   x = new float[nb];
   y = new float[nb];
   vx = new float[nb];

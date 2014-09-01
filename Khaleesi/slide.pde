@@ -1,11 +1,10 @@
-// The next line is needed if running in JavaScript Mode with Processing.js
 /* @pjs preload="Bordeaux.jpg"; */
 
 PImage bg;
 
 void setup()
 {
-  size(1600, 1000);
+  size(1600, 850);
   bg = loadImage("Bordeaux.jpg");
 }
 
