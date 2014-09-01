@@ -26,7 +26,7 @@ body {
 }
 
 #menu ul li a {
-	color: #000;
+	color: #000 !important;
 	text-decoration: none;
 }
 
@@ -82,7 +82,14 @@ h1 {
 	margin-left: 40% !important;
 }
 
-canvas {
-	margin: auto;
-	text-align: center;
+#dataviz1 {
+	width: 100%;
+}
+
+#dataviz2 {
+	width: 100%;
+}
+
+#dataviz3 {
+	width: 100%;
 }
