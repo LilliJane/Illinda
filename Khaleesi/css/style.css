@@ -31,27 +31,36 @@ video {
 
 #arrowDown1 {
 	width:50%;
+	margin-left: -25%;
 	margin-bottom: -15%;
 	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 }
 
 #arrowDown2 {
 	width:50%;
+	margin-left: -25%;
 	margin-bottom: -15%;
-	-moz-animation-delay: 0.33s;
+	-moz-animation-delay: 0.333333s;
 	-moz-animation-iteration-count: infinite;
+	-webkit-animation-delay: 0.333333s;
+	-webkit-animation-iteration-count: infinite;
 }
 
 #arrowDown3 {
 	width:50%;
+	margin-left: -25%;
 	margin-bottom: -15%;
-	-moz-animation-delay: 0.66s;
+	-moz-animation-delay: 0.666666s;
 	-moz-animation-iteration-count: infinite;
+	-webkit-animation-delay: 0.666666s;
+	-webkit-animation-iteration-count: infinite;
 }
 
 #town {
 	margin-top: 10%;
 	width: 100%;
+	margin-bottom: 5%;
 }
 
 h1 {
