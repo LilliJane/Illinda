@@ -19,17 +19,38 @@ body {
 	height: 10%;
 	width: 50%;
 	margin-left: 25%;
-	margin-bottom: 25%;
+	margin-bottom: 20%;
 }
 
 video {
 	border: solid 1px green;
 	position: relative;
-	width: 90%;
-	margin-left: 5%;
+	width: 80%;
+	margin-left: 12%;
+}
+
+#arrowDown1 {
+	width:50%;
+	margin-bottom: -15%;
+	-moz-animation-iteration-count: infinite;
+}
+
+#arrowDown2 {
+	width:50%;
+	margin-bottom: -15%;
+	-moz-animation-delay: 0.33s;
+	-moz-animation-iteration-count: infinite;
+}
+
+#arrowDown3 {
+	width:50%;
+	margin-bottom: -15%;
+	-moz-animation-delay: 0.66s;
+	-moz-animation-iteration-count: infinite;
 }
 
 #town {
+	margin-top: 10%;
 	width: 100%;
 }
 
