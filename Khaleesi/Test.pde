@@ -2,9 +2,9 @@ int totalPts = 300;
 float steps = totalPts + 1;
   
 void setup() {
-  size(640, 360);
+  size(1600, 850);
   stroke(255);
-  frameRate(1);
+  frameRate(5);
 } 
 
 void draw() {
