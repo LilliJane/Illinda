@@ -1,13 +1,22 @@
-var img;  // Declare variable 'img'.
+var bg;
+var y = 0;
 
 function setup() {
-    createCanvas(1600, 850);
-    img = loadImage("Bordeaux.jpg");  // Load the image 
+  // The background image must be the same size as the parameters
+  // into the size() method. In this program, the size of the image
+  // is 710x400 pixels.
+    bg = loadImage("assets/Bordeaux.jpg");
+    createCanvas(800, 1000);
 }
 
 function draw() {
-  // Displays the image at its actual size at point (0,0)
-    image(img, 0, 0);
-  // Displays the image at point (0, height/2) at half size
-    image(img, 0, height/2, img.width/2, img.height/2);
+    background(bg);
+  
+    stroke(226, 204, 0);
+    line(0, y, width, y);
+  
+    y++;
+    if (y > height) {
+	y = 0; 
+    }
 }
