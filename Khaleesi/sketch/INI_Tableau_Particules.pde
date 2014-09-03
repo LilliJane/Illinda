@@ -30,6 +30,9 @@ void draw()
   noStroke();
   fill(255,255,255,255);
   rect(0,0,width,height);
+  loadPixels();
+  for (int i = 0; i < width * height; i++) pixels[i] = 0;
+  updatePixels(); 
     
   for (int i=0; i<nb; i++)
   {
@@ -56,16 +59,16 @@ void draw()
       vy[i] = -vy[i];
     }
   }
-for(int i=0; i<nb; i++)
-{
-  for(int j=0; j<nb; j++)
+  for(int i=0; i<nb; i++)
   {
-    if(dist(x[i],y[i],x[j],y[j]) <= 100)
+   for(int j=0; j<nb; j++)
     {
-      strokeWeight(2);
-      stroke(0,0,0);
-      line(x[i],y[i],x[j],y[j]);
-    }
+     if(dist(x[i],y[i],x[j],y[j]) <= 100)
+     {
+	 strokeWeight(2);
+      	 stroke(0,0,0);
+      	 line(x[i],y[i],x[j],y[j]);
+     }
   }
   drawSelectedDot();
 }
