@@ -19,9 +19,9 @@ void setup()
   {
     x[i] = random(width);
     y[i] = random(height);
-    vx[i] = random(-5, 5);
-    vy[i] = random(-3, 3);
-    d[i] = random(10, 40);
+    vx[i] = random(-5, 10);
+    vy[i] = random(-3, 10);
+    d[i] = random(10, 60);
   }
 }
 
