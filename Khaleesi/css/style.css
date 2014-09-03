@@ -26,8 +26,11 @@ body {
 }
 
 #menu ul li a {
-	color: #000 !important;
 	text-decoration: none;
+}
+
+#menu ul li a .popUp{
+	color: #ababab;
 }
 
 #logo {
@@ -56,9 +59,9 @@ video {
 	width:50%;
 	margin-left: -25%;
 	margin-bottom: -15%;
-	-moz-animation-delay: 0.333333s;
+	-moz-animation-delay: .33333333333333333333s;
 	-moz-animation-iteration-count: infinite;
-	-webkit-animation-delay: 0.333333s;
+	-webkit-animation-delay: .33333333333333333333s;
 	-webkit-animation-iteration-count: infinite;
 }
 
@@ -66,9 +69,9 @@ video {
 	width:50%;
 	margin-left: -25%;
 	margin-bottom: -15%;
-	-moz-animation-delay: 0.666666s;
+	-moz-animation-delay: .66666666666666666666s;
 	-moz-animation-iteration-count: infinite;
-	-webkit-animation-delay: 0.666666s;
+	-webkit-animation-delay: .66666666666666666666s;
 	-webkit-animation-iteration-count: infinite;
 }
 
@@ -84,6 +87,11 @@ h1 {
 
 #dataviz1 {
 	width: 100%;
+}
+
+#pageTwo {
+	background-image: url(../img/carte.png);
+	background-size: cover;
 }
 
 #dataviz2 {

@@ -5,28 +5,31 @@ $(document).ready(function() {
         // easing: 'easeInOutBounce',
         css3: true,
         controlArrowColor: 'black',
-        scrollingSpeed: 500,
+        scrollingSpeed: 700,
         afterRender: function() {
 
             //playing the video
             $('video').get(0).play();
         },
         scrollOverflow: true,
-        afterLoad: function(anchorLink, index){
-            if(index == '1'){
-                $('#menu1').css('color:#000');
-                $('#menu2').css('color:#ababab');
-                $('#menu3').css('color:#ababab');
+        onLeave: function(index, nextIndex, direction){
+            if(index == '1' && direction == 'down'){
+                $('#menu1').css('color:#000 !important');
+                $('#menu2').css('color:#ababab !important');
+                $('#menu3').css('color:#ababab !important');
+                console.log('Test1');
             }
-            if(index == '2'){
-                $('#menu1').css('color:#ababab');
-                $('#menu2').css('color:#000');
-                $('#menu3').css('color:#ababab');
+            if(index == '2' && direction == 'down'){
+                $('#menu1').css('color:#ababab !important');
+                $('#menu2').css('color:#000 !important');
+                $('#menu3').css('color:#ababab !important');
+                console.log('Test2');
             }
-            if(index == '3'){
-                $('#menu1').css('color:#ababab');
-                $('#menu2').css('color:#ababab');
-                $('#menu3').css('color:#000');
+            if(index == '3' && direction == 'up'){
+                $('#menu1').css('color:#ababab !important');
+                $('#menu2').css('color:#ababab !important');
+                $('#menu3').css('color:#000 !important');
+                console.log('Test3');
             }
         }
     });
