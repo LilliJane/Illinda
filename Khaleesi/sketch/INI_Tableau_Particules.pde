@@ -8,7 +8,7 @@ int nb = 250;
 
 void setup()
 { 
-  size(1560, 1600);
+  size(1350, 1600);
   x = new float[nb];
   y = new float[nb];
   vx = new float[nb];
@@ -67,7 +67,6 @@ void draw()
      {
 	 strokeWeight(2);
       	 stroke(0,0,0);
-      	 line(x[i],y[i],x[j],y[j]);
      }
   }
   drawSelectedDot();
