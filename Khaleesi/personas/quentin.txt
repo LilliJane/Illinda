@@ -1,0 +1,7 @@
+Reseau du drone:
+
+* Capteurs meteorologiques + connection meteo France + capteurs pollution = le reveil conseille de prendre le velo
+
+* Parc a velo gratuit renforce aux reveils. Signalisation de la ville s'adapte aux deux roues devant / face  l'influence / affluence
+
+* Reseau du drone d'une societe privee signale un accident -> push une alerte sur montre connectee
