@@ -23,14 +23,16 @@ body {
 
 #menu ul li {
 	font-size: 1.2em;
+
 }
 
 #menu ul li a {
 	text-decoration: none;
+	color: #000;
 }
 
-#menu ul li a .popUp{
-	color: #ababab;
+.popUp {
+	color: #ababab !important;
 }
 
 #logo {

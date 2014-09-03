@@ -14,15 +14,15 @@ $(document).ready(function() {
         scrollOverflow: true,
         onLeave: function(index, nextIndex, direction){
             if(index == '1' && direction == 'down'){
-                $('#menu1').css('color:#000 !important');
-                $('#menu2').css('color:#ababab !important');
-                $('#menu3').css('color:#ababab !important');
+                $('#menu1').removeClass('popUp');
+                $('#menu2').addClass('popUp');
+                $('#menu3').addClass('popUp');
                 console.log('Test1');
             }
             if(index == '2' && direction == 'down'){
-                $('#menu1').css('color:#ababab !important');
-                $('#menu2').css('color:#000 !important');
-                $('#menu3').css('color:#ababab !important');
+                $('#menu1').css('color:#ababab');
+                $('#menu2').css('color:#000');
+                $('#menu3').css('color:#ababab');
                 console.log('Test2');
             }
             if(index == '3' && direction == 'up'){
