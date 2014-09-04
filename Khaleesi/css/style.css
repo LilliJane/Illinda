@@ -5,7 +5,7 @@ body {
 }
 
 #menu {
-	height: 15%;
+	height: 12%;
 	width: 100%;
 	position: fixed;
 	z-index: 1;
@@ -13,7 +13,7 @@ body {
 
 #menu h1 {
 	margin-left: 2% !important;
-	font-size: 2em;
+	font-size: 1.8em;
 	text-decoration: underline;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 #menu ul li {
-	font-size: 1.2em;
+	font-size: 1em;
 
 }
 
@@ -91,9 +91,22 @@ h1 {
 	width: 100%;
 }
 
+#pageOne {
+	
+}
+
 #pageTwo {
+	height: 100%;
 	background-image: url(../img/carte.png);
-	background-size: cover;
+	background-size: 100% 90%;
+}
+
+#pageThree {
+
+}
+
+#pageFour {
+	
 }
 
 #dataviz2 {
