@@ -17,6 +17,14 @@ body {
 	text-decoration: underline;
 }
 
+button {
+	margin-left: 2% !important;
+}
+
+#myMenu {
+	margin-left: 2% !important;
+}
+
 #menu ul {
 	list-style-type:none;
 }
