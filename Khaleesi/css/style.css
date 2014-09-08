@@ -39,8 +39,9 @@ button {
 	color: #000;
 }
 
-.popUp {
-	color: #ababab !important;
+.nav-pills > li.active > a {
+	background-color: black !important;
+	color: white !important;
 }
 
 #logo {
