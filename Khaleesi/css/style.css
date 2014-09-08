@@ -40,8 +40,9 @@ button {
 }
 
 .nav-pills > li.active > a {
-	background-color: black !important;
+	background-color: #ababab !important;
 	color: white !important;
+	font-weight: bold; 
 }
 
 #logo {

@@ -1,8 +1,9 @@
 $(document).ready(function() {
+
+    // fullPage init
     $('#fullPage').fullpage( {
         sectionsColor: ['#FFF', '#FFF', '#FFF'],
         anchors: ['accueil', 'dataflux', 'turfu'],
-        // easing: 'easeInOutBounce',
         css3: true,
         controlArrowColor: 'black',
         scrollingSpeed: 700,
@@ -14,12 +15,7 @@ $(document).ready(function() {
         scrollOverflow: true,
     });
 
-    // window.setInterval(function() {
-    //     if ($('#page0').hasClass('active')) {
-    //         console.log('toto');
-    //     }
-    // }, 1000);
-
+    // CSS change for the menu
     window.setInterval(function() {
         if ($('#page0').hasClass('active')) {
             $('#myMenu').children().removeClass('active');
@@ -33,6 +29,7 @@ $(document).ready(function() {
         }
     }, 300);
 
+    // Arrow's Js animation
     $('#arrowDown1').addClass('animated fadeInDown');
     $('#arrowDown2').addClass('animated fadeInDown');
     $('#arrowDown3').addClass('animated fadeInDown');
