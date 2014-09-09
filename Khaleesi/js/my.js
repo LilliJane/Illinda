@@ -15,7 +15,7 @@ $(document).ready(function() {
         scrollOverflow: true,
     });
 
-    // CSS change for the menu
+    // CSS' change for the menu
     window.setInterval(function() {
         if ($('#page0').hasClass('active')) {
             $('#myMenu').children().removeClass('active');
