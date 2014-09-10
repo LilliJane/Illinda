@@ -54,6 +54,15 @@ button {
 	margin-bottom: 20%;
 }
 
+#lang {
+	list-style: none;
+	padding-top: 10%;
+}
+
+#lang li {
+	display: inline-block;
+}
+
 video {
 	border: solid 1px green;
 	position: relative;
