@@ -27,10 +27,14 @@ $(document).ready(function() {
             $('#myMenu').children().removeClass('active');
             $('#menu3').addClass('active');
         }
-    }, 300);
+    }, 1000);
 
     // Arrow's Js animation
     $('#arrowDown1').addClass('animated fadeInDown');
     $('#arrowDown2').addClass('animated fadeInDown');
     $('#arrowDown3').addClass('animated fadeInDown');
+
+    // Catch Windows viewport
+    var winH = windows.innerHeight;
+    console.log(varH);
 });

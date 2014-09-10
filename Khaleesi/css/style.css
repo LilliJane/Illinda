@@ -5,6 +5,7 @@ body {
 }
 
 #menu {
+	margin-top: 2%;
 	height: 12%;
 	width: 100%;
 	position: fixed;
@@ -40,7 +41,7 @@ button {
 }
 
 .nav-pills > li.active > a {
-	background-color: #ababab !important;
+	background-color: #000 !important;
 	color: white !important;
 	font-weight: bold; 
 }
@@ -48,6 +49,7 @@ button {
 #logo {
 	height: 10%;
 	width: 50%;
+	margin-top: 2%;
 	margin-left: 25%;
 	margin-bottom: 20%;
 }
@@ -118,6 +120,19 @@ h1 {
 #pageFour {
 	
 }
+
+#principal2 {
+	height: 800px;
+}
+
+#principal21 {
+	height: 400px;
+}
+
+#principal22 {
+	height: 400px;
+}
+
 
 #dataviz2 {
 	width: 100%;

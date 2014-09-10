@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
         <title>Databuzz Team Prototype2 Web Site</title>
         <meta name="author" content="Gil 'Ragnar' Felot" />
         <meta content="http://illinda.com" name="identifier-url">
@@ -15,7 +15,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+<!--         <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 
     </head>
@@ -25,9 +25,8 @@
 
             <header>
                 <div id="menu">
-                    <h1>ILLINDA</h1>
                     <div class="dropdown" role="navigation">
-                        <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
                         <span class="glyphicon glyphicon-th-list"></span>
                         </button>
                     
@@ -112,16 +111,24 @@
 
                     <!-- Slide 2 -->
                     <div id="pageTwo" class="slide">
-                        <div class="row">
-                            <div class="col-sm-offset-8 col-sm-3">
-                                <!-- <h2>Une journée en semaine</h2> -->
-                            </div>
-                        </div>
-
-                        <div class="row">
+                        <div id="principal2" class="row">
                             <div class="col-sm-6">
-			                 <canvas id="dataviz2" data-processing-sources="sketch/INI_Tableau_Particules.pde" width="1600" height="850"></canvas>
+	                           <!-- <canvas id="dataviz2" data-processing-sources="sketch/INI_Tableau_Particules.pde" width="1600" height="850"></canvas> -->
                             </div>
+                            <div class="col-sm-6">
+                                <div id="principal21" class="row">
+                                    <div class="col-sm-offset-4 col-sm-4">
+                                        <h2>Legende</h2>
+                                    </div>
+                                </div>
+
+                                <div id="principal22" class="row">
+                                    <div class="col-sm-offset-4 col-sm-4">
+                                        <h2>Test</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
