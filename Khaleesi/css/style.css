@@ -40,6 +40,7 @@ button {
 	color: #000;
 }
 
+
 .nav-pills > li.active > a {
 	background-color: #000 !important;
 	color: white !important;
@@ -56,11 +57,16 @@ button {
 
 #lang {
 	list-style: none;
-	padding-top: 10%;
 }
 
 #lang li {
 	display: inline-block;
+}
+
+#lang .flag {
+	height: 20px;
+	width: 20px;
+	margin-top: 20px;
 }
 
 video {
@@ -113,7 +119,9 @@ h1 {
 }
 
 #pageOne {
-	
+	height: 100%;
+	background-image: url(../img/carte.png);
+	background-size: 100% 100%;
 }
 
 #pageTwo {
@@ -123,11 +131,15 @@ h1 {
 }
 
 #pageThree {
-
+	height: 100%;
+	background-image: url(../img/carte.png);
+	background-size: 100% 100%;
 }
 
 #pageFour {
-	
+	height: 100%;
+	background-image: url(../img/carte.png);
+	background-size: 100% 100%;
 }
 
 #principal2 {
