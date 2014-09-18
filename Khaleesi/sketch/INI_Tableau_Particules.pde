@@ -65,8 +65,8 @@ void draw()
     {
      if(dist(x[i],y[i],x[j],y[j]) <= 100)
      {
-	 strokeWeight(2);
-      	 stroke(0,0,0);
+	 strokeWeight(0);
+      	 stroke(0,255,0);
      }
   }
   drawSelectedDot();
