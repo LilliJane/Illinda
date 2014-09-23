@@ -2,8 +2,8 @@ $(document).ready(function() {
 
     // fullPage init
     $('#fullPage').fullpage( {
-        sectionsColor: ['#FFF', '#FFF', '#FFF'],
-        anchors: ['accueil', 'dataflux', 'turfu'],
+        sectionsColor: ['#FFF', '#FFF'],
+        anchors: ['accueil', 'dataflux'],
         css3: true,
         controlArrowColor: 'black',
         scrollingSpeed: 700,

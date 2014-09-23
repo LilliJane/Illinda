@@ -1,2 +1,0 @@
-ERROR 3: Cannot open file '/var/tmp/MyGeoData-DataCache/2014-08-12-12-57-52_eznds/result/COMMUNE.json'
-ERROR 3: Cannot open file '/var/tmp/MyGeoData-DataCache/2014-08-12-12-57-52_eznds/result/COMMUNE.json'
