@@ -26,16 +26,16 @@ button {
 	margin-left: 2% !important;
 }
 
-#menu ul {
+#menu > ul {
 	list-style-type:none;
 }
 
-#menu ul li {
+#menu > ul > li {
 	font-size: 1em;
 
 }
 
-#menu ul li a {
+#menu > ul > li > a {
 	text-decoration: none;
 	color: #000;
 }
@@ -57,16 +57,26 @@ button {
 
 #lang {
 	list-style: none;
+	position: absolute;
+	right: 5%;
+	top: 0;
 }
 
-#lang li {
+#lang > li {
 	display: inline-block;
+	margin-top: 30px;
+}
+
+#lang > li > a {
+	width: 30px;
+	height: 20px;
+	display: block;
 }
 
 #lang .flag {
 	height: 20px;
-	width: 20px;
-	margin-top: 20px;
+	width: 30px;
+	background-size: cover;
 }
 
 video {
