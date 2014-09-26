@@ -35,6 +35,6 @@ $(document).ready(function() {
     $('#arrowDown3').addClass('animated fadeInDown');
 
     // Catch Windows viewport
-    var winH = windows.innerHeight;
-    console.log(varH);
+    //var winH = windows.innerHeight;
+    //console.log(varH);
 });
