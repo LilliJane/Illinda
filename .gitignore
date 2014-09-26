@@ -38,3 +38,7 @@ Gemfile.lock
 ## Dev Web
 *.psd
 *.zip
+
+
+## Password
+.htpasswd
