@@ -10,10 +10,10 @@ $(document).ready(function(){
     canvas = 
 	document.getElementById('particules'),
 	  context = canvas.getContext('2d'),
-	  radius = 5,
+	  radius = 1.5,
 	  boundaryX = 400,
 	  boundaryY = 200,
-	  numberOfPoints = 50;
+	  numberOfPoints = 150;
 
 	init();
 

@@ -201,7 +201,7 @@ div.container {
 /* VELOCITY */
 
 canvas {
-	width: 600px; height: 600px;
+	width: 900px; height: 800px;
 	position: absolute; top: 0;
 	left: 50px;
 }
