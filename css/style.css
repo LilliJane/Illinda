@@ -203,5 +203,5 @@ div.container {
 canvas {
 	width: 600px; height: 600px;
 	position: absolute; top: 0;
-	left: 50px; transform: rotate(20deg);
+	left: 50px;
 }

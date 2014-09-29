@@ -68,7 +68,7 @@ $(document).ready(function(){
 	function drawCircle(x, y) {
 	  context.beginPath();
 	  context.arc(x, y, radius, 0, 2 * Math.PI, false);
-	  context.fillStyle = '#EEF0F0';
+	  context.fillStyle = '#000';
 	  context.fill();  
 	}
 
