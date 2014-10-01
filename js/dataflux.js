@@ -28,7 +28,7 @@ var quantity = 50, //number of dots
 	for (i = 0; i < quantity; i++) {
 		tween.time(i); //jumps to the appropriate time in the tween, causing position.x and position.y to be updated accordingly.
 
-		dot = $("<div />", {id:"dot"+i}).addClass("adot")
+		dot = $("<div />", {id:"dot"+i}).addClass("adotf")
 					.css({left:position.x+"px", top:position.y+"px"})
 					.appendTo("#pageOne"); //EDIT for the good div : PageOne ...
 					//create a new dot, add the .adot class, set the position, and add it to the body.

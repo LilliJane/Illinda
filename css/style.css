@@ -293,9 +293,16 @@ canvas {
 }
 
 /* GSAP - Tween - Dot (Amber color) */
+.adotf{
+	position: absolute;
+	width: 15px; height: 15px;
+	background-color: #FFBF00;
+	border-radius: 50%; visibility:hidden;
+}
+
 .adot{
 	position: absolute;
-	width: 20px; height: 20px;
-	background-color: #FFBF00;
+	width: 15px; height: 15px;
+	background-color: grey;
 	border-radius: 50%; visibility:hidden;
 }
