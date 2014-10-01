@@ -152,6 +152,92 @@ div.container {
   margin-top: 0.2em;
 }
 
+/* Tabs Sys */
+/* http://codepen.io/wallaceerick/pen/ojtal */
+
+@import url("http://fonts.googleapis.com/css?family=Lato");
+
+$tabs-base-color: white;
+/** { 
+  @include box-sizing(border-box);
+}*/
+body {
+  padding: 20px;
+  text-align: left;
+  font-family: Lato;
+  color: grey; 
+  background: $background;  
+}
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  float: left;
+  margin: 20px 0 100px 10px; 
+  span { 
+    font-size: 13px;
+    display: block;
+    padding-left: 4px;
+  }
+}
+.tabs {
+  width: 650px;  
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+  li {
+    float: left;
+    display: block;
+  }
+  input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: $tabs-base-color;
+    cursor: pointer;
+    position: relative;
+    top: 4px; 
+    @include transition(all 0.2s ease-in-out);
+    &:hover {
+      background: darken($tabs-base-color, 10);
+    }
+  }
+  .tab-content{
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;  
+    position: absolute;
+    top: 53px;
+    left: 0; 
+    background: darken($tabs-base-color, 15);
+  }
+/* The Magic */
+  [id^="tab"]:checked + label { 
+    top: 0;
+    padding-top: 17px; 
+    background: darken($tabs-base-color, 15); 
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+}
+
+/*Page 1*/
 
 #pageOne {
 	height: 100%;
@@ -159,11 +245,36 @@ div.container {
 	background-size: 100% 100%;
 }
 
+/* Page1.1 */
+
+.follow {
+	position: absolute; bottom: 0;
+	height: 7em; width: 30em;
+	display: inline-block;
+	margin-left: 3%;
+	background-color: black;
+	z-index: 100;
+}
+
+.follow > a {
+	text-decoration: none;
+	color: white;
+	text-align: left;
+	font-size: 3em;
+	height: auto;
+	width: auto;
+	padding-left: 5%;
+}
+
+/* Page1.2 */
+
 #pageTwo {
 	height: 100%;
 	background-image: url(../img/carte.png);
 	background-size: 100% 100%;
 }
+
+/* Page1.3 */
 
 #pageThree {
 	height: 100%;
@@ -171,37 +282,20 @@ div.container {
 	background-size: 100% 100%;
 }
 
-#pageFour {
-	height: 100%;
-	background-image: url(../img/carte.png);
-	background-size: 100% 100%;
-}
 
-#principal2 {
-	height: 800px;
-}
-
-#principal21 {
-	height: 400px;
-}
-
-#principal22 {
-	height: 400px;
-}
-
-
-#dataviz2 {
-	width: 100%;
-}
-
-#dataviz3 {
-	width: 100%;
-}
 
 /* VELOCITY */
 
 canvas {
 	width: 900px; height: 800px;
 	position: absolute; top: 0;
-	left: 50px;
+	left: 50px; z-index: 0;
+}
+
+/* GSAP - Tween - Dot (Amber color) */
+.adot{
+	position: absolute;
+	width: 20px; height: 20px;
+	background-color: #FFBF00;
+	border-radius: 50%; visibility:hidden;
 }
