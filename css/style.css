@@ -75,7 +75,7 @@ button {
 }
 
 video {
-	border: solid 1px green;
+	/*border: solid 1px green;*/
 	position: relative;
 	width: 80%;
 	margin-left: 12%;
@@ -155,14 +155,7 @@ div.container {
 /* Tabs Sys */
 /* http://codepen.io/wallaceerick/pen/ojtal */
 
-@import url("http://fonts.googleapis.com/css?family=Lato");
-/** {
-  margin: 0;
-  padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}*/
+/*@import url("http://fonts.googleapis.com/css?family=Lato");*/
 
 body > .tabs {
 	position: absolute;
@@ -170,7 +163,7 @@ body > .tabs {
 	right: 0;
 	padding: 20px;
 	text-align: left;
-	font-family: Lato;
+	/*font-family: Lato;*/
 }
 
 .tabs > h1 {
@@ -221,7 +214,7 @@ body > .tabs {
   transition: all 0.2s ease-in-out;
 }
 .tabs label:hover {
-  background: #404040;
+  background:grey;
   color: white;
 }
 .tabs .tab-content {
@@ -280,8 +273,8 @@ p.link a:hover {
 /* Page1.1 */
 
 .follow {
-	position: absolute; bottom: 0;
-	height: 7em; width: 30em;
+	position: absolute; bottom: 2%; 
+	height: 10%; width: 10%;
 	display: inline-block;
 	margin-left: 3%;
 	background-color: black;
@@ -292,10 +285,13 @@ p.link a:hover {
 	text-decoration: none;
 	color: white;
 	text-align: left;
+	vertical-align: middle;
 	font-size: 3em;
-	height: auto;
-	width: auto;
+	height: 100%;
+	width: 100%;
 	padding-left: 5%;
+	padding-right: 60%;
+	padding-bottom: 5%;
 }
 
 /* Page1.2 */
