@@ -164,88 +164,79 @@ body > .tabs {
 }
 
 .tabs > h1 {
-  font-weight: normal;
-  font-size: 40px;
-  font-weight: normal;
-  text-transform: uppercase;
-  float: left;
-  margin: 20px 0 100px 10px;
+	font-weight: normal;
+	font-size: 40px;
+	font-weight: normal;
+	text-transform: uppercase;
+	float: left;
+	margin: 20px 0 100px 10px;
 }
 .tabs >  h1 span {
-  font-size: 13px;
-  display: block;
-  padding-left: 4px;
+	font-size: 13px;
+	display: block;
+	padding-left: 4px;
 }
 
 .tabs {
-  width: 650px;
-  list-style: none;
-  position: relative;
-  text-align: left;
+	width: 650px;
+	list-style: none;
+	position: relative;
+	text-align: left;
 }
 .tabs li {
-  float: left;
-  display: block;
+	float: left;
+	display: block;
 }
 .tabs input[type="radio"] {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
 }
 .tabs label {
-  display: block;
-  padding: 14px 21px;
-  border-radius: 2px 2px 0 0;
-  font-size: 20px;
-  font-weight: normal;
-  text-transform: uppercase;
-  background: white;
-  cursor: pointer;
-  position: relative;
-  top: 4px;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+	display: block;
+	padding: 14px 21px;
+	border-radius: 2px 2px 0 0;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	background: white;
+	cursor: pointer;
+	position: relative;
+	top: 4px;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .tabs label:hover {
-  background:grey;
-  color: white;
+	background:grey;
+	color: white;
 }
 .tabs .tab-content {
-  z-index: 2;
-  display: none;
-  overflow: hidden;
-  width: 75%;
-  font-size: 17px;
-  line-height: 25px;
-  padding: 2%;
-  position: absolute;
-  top: 53px;
-  left: 0;
-  background: white;
-  margin-left: 1%;
+	z-index: 2;
+	display: none;
+	overflow: hidden;
+	width: 75%;
+	font-size: 17px;
+	line-height: 25px;
+	padding: 2%;
+	position: absolute;
+	top: 53px;
+	left: 0;
+	background: white;
+	margin-left: 1%;
 }
 .tabs [id^="tab"]:checked + label {
-  top: 0;
-  padding-top: 17px;
-  background: black;
-  color: white;
+	top: 0;
+	padding-top: 17px;
+	background: black;
+	color: white;
 }
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
-  display: block;
+  	display: block;
 }
 
-
-/*Page 1*/
-
-#pageOne {
-	height: 100%;
-	background-image: url(../img/carte.png);
-	background-size: 100% 100%;
-}
-
-/* Page1.1 */
+/* Follow Btn  */
 
 .follow {
 	position: absolute; bottom: 2%; 
@@ -268,6 +259,38 @@ body > .tabs {
 	padding-right: 60%;
 	padding-bottom: 5%;
 }
+
+/* Back Btn  */
+
+.back {
+	position: absolute; bottom: 2%; 
+	height: 10%; width: 30%;
+	display: inline-block;
+	margin-left: 3%;
+	background-color: black;
+	z-index: 100;
+}
+
+.back > a {
+	text-decoration: none;
+	color: white;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 3em;
+	height: 100%;
+	width: 100%;
+	padding: 20% 5%;
+}
+
+/*Page 1.1 */
+
+#pageOne {
+	height: 100%;
+	background-image: url(../img/carte.png);
+	background-size: 100% 100%;
+}
+
+
 
 /* Page1.2 */
 
