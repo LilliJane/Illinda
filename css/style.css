@@ -181,7 +181,6 @@ body > .tabs {
   width: 650px;
   list-style: none;
   position: relative;
-/*  margin: 80px 0 0 10px;*/
   text-align: left;
 }
 .tabs li {
@@ -217,14 +216,15 @@ body > .tabs {
   z-index: 2;
   display: none;
   overflow: hidden;
-  width: 100%;
+  width: 75%;
   font-size: 17px;
   line-height: 25px;
-  padding: 25px;
+  padding: 2%;
   position: absolute;
   top: 53px;
   left: 0;
   background: white;
+  margin-left: 1%;
 }
 .tabs [id^="tab"]:checked + label {
   top: 0;
@@ -234,27 +234,6 @@ body > .tabs {
 }
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
-}
-
-p.link {
-  clear: both;
-  margin: 380px 0 0 15px;
-}
-p.link a {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 0 5px;
-  background-color: #612e76;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-p.link a:hover {
-  background-color: #522764;
 }
 
 

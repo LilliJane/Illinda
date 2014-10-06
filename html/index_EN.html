@@ -4,188 +4,211 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <title>Illinda by DataBuzz</title>
-        <meta name="author" content="Gil 'Ragnar' Felot" />
-        <!-- <meta content="http://illinda.com" name="identifier-url"> -->
-        <meta name="description" content="Immersion dans la ville numérique" />
-        <meta name="keywords" content="DataViz, Bordeaux, Graphique, Bordeaux , design, digital, numérique, semaine digitale, datavisualisation, IONIS , ville intelligente , objet connecté, flux, population" />
-        <meta name="Resource-type" content="Document" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="UTF-8">
+            <title>Illinda by DataBuzz</title>
+            <meta name="author" content="Gil 'Ragnar' Felot" />
+            <!-- <meta content="http://illinda.com" name="identifier-url"> -->
+            <meta name="description" content="Immersion dans la ville numérique" />
+            <meta name="keywords" content="DataViz, Bordeaux, Graphique, Bordeaux , design, digital, numérique, semaine digitale, datavisualisation, IONIS , ville intelligente , objet connecté, flux, population" />
+            <meta name="Resource-type" content="Document" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" type="image/ico" href="img/favicon.ico" />
-
-        <link rel="stylesheet" type="text/css" href="../css/style.css" />
-        <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
-        <link rel="stylesheet" type="text/css" href="../css/animate.css" />
-        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
-        <script src="../js/lib/modernizr.js"></script>
+            <link rel="icon" type="image/ico" href="../img/favicon.ico" />
+            <link rel="stylesheet" type="text/css" href="../css/style.css" />
+            <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+            <link rel="stylesheet" type="text/css" href="../css/animate.css" />
+            <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
+            <script src="../js/lib/modernizr.js"></script>
     </head>
-
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <wrapper>
-
-            <header>
-                <div id="menu">
-                    <div class="dropdown" role="navigation">
-                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-th-list"></span>
-                        </button>
+            <!--[if lt IE 7]>
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <wrapper>
+                <header>
+                    <div id="menu">
+                        <div class="dropdown" role="navigation">
+                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-th-list"></span>
+                            </button>
                     
-                        <ul id="myMenu" class="dropdown-menu nav nav-pills nav-stacked" role="menu">
-                            <li id="menu1" data-menuanchor="accueil" class="active">
-                                <a href="#accueil">Presentation</a>
-                            </li>
-                            <li id="menu2" data-menuanchor="dataflux">
-                                <a href="#dataflux">Data Flux</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-
-            <div id="fullPage">
-
-            <!-- Accueil -->
-                <div class="section" id="page0">
-                    <div class="row" >
-                        <div id="lang">
-                            <a id="flagFR" href="../index.html">
-                                <img class="flag" src="../img/FR_flag.jpg" >
-                            </a>
-                            <a id="flagES" href="index_ES.html">
-                                <img class="flag" src="../img/ES_flag.jpg" >
-                            </a>
-                        </div>
-                        <div class="col-sm-offset-5 col-sm-2">
-                            <img src="../img/illindaLogo.png" id="logo" >
+                            <ul id="myMenu" class="dropdown-menu nav nav-pills nav-stacked" role="menu">
+                                <li id="menu1" data-menuanchor="accueil" class="active">
+                                    <a href="#accueil">Presentation</a>
+                                </li>
+                                <li id="menu2" data-menuanchor="dataflux">
+                                    <a href="#dataflux">Data Flux</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-offset-2 col-sm-8">
-                            <video autoplay="true" loop preload="auto">
-                            <source src="../img/anim_logo.mp4" type="video/mp4" />
-                            <source src="../img/anim_logo.webm" type="video/webm" />
-                            <source src="../img/anim_logo.ogv" type="video/ogg" />
-                            </video>
-                        </div>
-                    </div>
+                </header>
 
-                    <div class="row">
-                        <div class="row">
-                            <div class="col-sm-offset-6 col-sm-1">
-                                <img id="arrowDown1" src="../img/arrowDown.png">
+                <div id="fullPage">
+                <!-- Accueil -->
+                    <div class="section" id="page0">
+                        <div class="row" id="p0-header">
+                            <div id="lang">
+                                <a id="flagFR" href="../index.html">
+                                    <img class="flag" src="../img/FR_flag.jpg" >
+                                </a>
+                                <a id="flagEN" href="index_EN.html">
+                                    <img class="flag" src="../img/EN_flag.jpg" >
+                                </a>
+                            </div>
+                            <div class="col-sm-offset-5 col-sm-2">
+                                <img src="../img/illindaLogo.png" id="logo" >
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-offset-6 col-sm-1">
-                                <img id="arrowDown2" src="../img/arrowDown.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-offset-6 col-sm-1">
-                                <img id="arrowDown3" src="../img/arrowDown.png">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <img src="../img/town.png" id="town">
-                        </div>
-                    </div>
-                </div>
-                
-
-            <!-- Page 1 -->    
-                <div class="section" id="page1">
-
-                    <!-- Slide 1 -->
-                    <div id="pageOne" class="slide">
-                        <div class="row">
-                            <div class="col-sm-offset-5 col-sm-4">
-                                
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-sm-offset-2 col-sm-8"></div>
-                        </div>
-
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div id="pageTwo" class="slide">
-                        <div id="principal2" class="row">
-                            <div class="col-sm-6">
-                               <!--canvas id="dataviz2" data-processing-sources="sketch/INI_Tableau_Particules.pde" width="1600" height="850"></canvas-->
-                            </div>
-                            <div class="col-sm-6">
-                                <div id="principal21" class="row">
-                                    <div class="col-sm-offset-4 col-sm-4">
-                                        <h2>Legende</h2>
-                                    </div>
-                                </div>
-
-                                <div id="principal22" class="row">
-                                    <div class="col-sm-offset-4 col-sm-4">
-                                        <h2>Test</h2>
-                                        <a href="html/timeline/FR/_frTimeline2.html" class="btn btn-inverse btn-large"><i class="icon-white icon-info-sign"></i> Bootstrap Button Generator</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div id="pageThree" class="slide">
-                        <div class="row">
-                            <div class="col-sm-offset-5 col-sm-4">
-                                
-                            </div>
-                        </div>
-
                         <div class="row">
                             <div class="col-sm-offset-2 col-sm-8">
+                                <video autoplay="true" loop preload="auto">
+                                    <source src="../img/anim_logo.mp4" type="video/mp4" />
+                                    <source src="../img/anim_logo.webm" type="video/webm" />
+                                    <source src="../img/anim_logo.ogv" type="video/ogg" />
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-sm-offset-6 col-sm-1">
+                                    <img id="arrowDown1" src="../img/arrowDown.png">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-offset-6 col-sm-1">
+                                    <img id="arrowDown2" src="../img/arrowDown.png">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-offset-6 col-sm-1">
+                                    <img id="arrowDown3" src="../img/arrowDown.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="../img/town.png" id="town">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> 
-            <!-- End FullPage -->
 
-        </wrapper>
+            <!-- Page 1 -->    
+                    <div class="section" id="page1">
 
-        <!-- Scripts Lib  -->
+                            <!-- Slide 1 -->
+                            <div id="pageOne" class="slide">
+                                <canvas id="particules"></canvas>
+                                <div class="right_part">
+                                    <ul class="tabs">
+                                        <li>
+                                            <input type="radio" name="tabs" id="tab11" checked />
+                                            <label for="tab11">Description</label>
+                                            <div id="tab-content11" class="tab-content">
+                                              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                            </div>
+                                        </li>
+                                  
+                                        <li>
+                                            <input type="radio" name="tabs" id="tab12" />
+                                            <label for="tab12">Specification</label>
+                                            <div id="tab-content12" class="tab-content">
+                                              <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <btn class="follow">
+                                    <a href="html/timeline/EN/_enTimeline1.html">FOLLOW</a>
+                                </btn>
+                            </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/lib/jquery.slimscroll.min.js"></script>
-        <script type="text/javascript" src="../js/lib/jquery.fullPage.js"></script>
-        <script type="text/javascript" src="../js/lib/processing.js"></script>
-        <script type="text/javascript" src="../js/lib/p5.min.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
-        <script type="text/javascript"src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.ui.min.js"></script>
+                            <!-- Slide 2 -->
+                            <div id="pageTwo" class="slide">
+                                    <!-- <canvas id="particules"></canvas> -->
+                                    <div class="right_part">
+                                        <ul class="tabs">
+                                            <li>
+                                                <input type="radio" name="tabs" id="tab21" checked />
+                                                <label for="tab21">Description</label>
+                                                <div id="tab-content21" class="tab-content">
+                                                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                                </div>
+                                            </li>
+                                          
+                                            <li>
+                                                <input type="radio" name="tabs" id="tab22" />
+                                                <label for="tab22">Specification</label>
+                                                <div id="tab-content22" class="tab-content">
+                                                  <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <btn class="follow">
+                                        <a href="html/timeline/EN/_enTimeline2.html">FOLLOW</a>
+                                        
+                                    </btn>
+                            </div>
 
-        <!-- Scripts Perso -->
-        <script type="text/javascript" src="../js/my.js"></script>
-        <script type="text/javascript" src="../js/dataflux.js"></script>
+                            <!-- Slide 3 -->
+                            <div id="pageThree" class="slide">
+                                    <!-- <canvas id="particules"></canvas> -->
+                                    <div class="right_part">
+                                        <ul class="tabs">
+                                            <li>
+                                                <input type="radio" name="tabs" id="tab31" checked />
+                                                <label for="tab31">Description</label>
+                                                <div id="tab-content31" class="tab-content">
+                                                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                                </div>
+                                            </li>
+                                          
+                                            <li>
+                                                <input type="radio" name="tabs" id="tab32" />
+                                                <label for="tab32">Specification</label>
+                                                <div id="tab-content32" class="tab-content">
+                                                  <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <btn class="follow">
+                                        <a href="html/timeline/EN/_enTimeline3.html">FOLLOW</a>
+                                        
+                                    </btn>
+                            </div>
+                    </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!-- <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script> -->
+                </div> <!-- End FullPage -->
+
+            </wrapper>
+
+            <!-- Scripts Lib  -->
+
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script> 
+            <script type="text/javascript" src="../js/lib/jquery.slimscroll.min.js"></script>
+            <script type="text/javascript" src="../js/lib/jquery.fullPage.js"></script>
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.8.4/TweenMax.min.js"></script>
+
+            <!-- Scripts Perso -->
+            <script type="text/javascript" src="../js/my.js"></script>
+            <script type="text/javascript" src="http://s.cdpn.io/53148/requestAnimationFrame.js"></script>
+            <script type="text/javascript" src="../js/dataflux.js"></script>
+
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <!-- <script>
+                    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                    e.src='//www.google-analytics.com/analytics.js';
+                    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                    ga('create','UA-XXXXX-X');ga('send','pageview');
+            </script> -->
     </body>
 
 </html>
