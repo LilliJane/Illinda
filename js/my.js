@@ -23,9 +23,6 @@ $(document).ready(function() {
         } else if ($('#page1').hasClass('active')) {
             $('#myMenu').children().removeClass('active');
             $('#menu2').addClass('active');
-        } else if ($('#page2').hasClass('active')) {
-            $('#myMenu').children().removeClass('active');
-            $('#menu3').addClass('active');
         }
     }, 1000);
 

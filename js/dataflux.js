@@ -5,8 +5,8 @@ $(document).ready(function(){
 ================================================*/
  
 // VARS
-var quantity = 50, //number of dots
-	duration = 10,  //duration (in seconds)
+var quantity = 150, //number of dots
+	duration = 60,  //duration (in seconds)
 	path = [{x:0, y:250}, {x:50, y:350}, {x:300, y:280}, {x:400, y:570}, {x:500, y:250}], 
 		//points on the path (BezierPlugin will plot a Bezier through these). Adjust however you please.
 	position = {x:path[0].x, y:[path[0].y]},
@@ -32,12 +32,12 @@ var quantity = 50, //number of dots
 					.appendTo("#pageOne"); //EDIT for the good div : PageOne ...
 					//create a new dot, add the .adot class, set the position, and add it to the body.
 		tl.set(dot, {visibility:"visible"}, i * (duration / quantity)); //toggle the visibility on at the appropriate time.
-		tl.to(dot, .3, {autoAlpha:0, display:"none"});
+		tl.to(dot, .45, {autoAlpha:0, display:"none"});
 	}
 
 	/* Test Point n2 */
-var quantity2 = 50, //number of dots
-	duration2 = 10,  //duration (in seconds)
+var quantity2 = 150, //number of dots
+	duration2 = 60,  //duration (in seconds)
 	path2 = [{x:850, y:457}, {x:550, y:350}, {x:537, y:280}, {x:450, y:570}, {x:280, y:657}, {x:90, y:250}, {x:0, y:250}], 
 		//points on the path (BezierPlugin will plot a Bezier through these). Adjust however you please.
 	position2 = {x:path2[0].x, y:[path2[0].y]},
@@ -64,7 +64,7 @@ var quantity2 = 50, //number of dots
 					.appendTo("#pageOne"); //EDIT for the good div : PageOne ...
 					//create a new dot, add the .adot class, set the position, and add it to the body.
 		tl2.set(dot2, {visibility:"visible"}, i2 * (duration2 / quantity2)); //toggle the visibility on at the appropriate time.
-		//tl2.to(dot2, 1, {autoAlpha:0, display:"none"}); //pour effacer les traces du gris
+		tl2.to(dot2, .45, {autoAlpha:0, display:"none"}); //pour effacer les traces du gris
 	}
 
 	// --------- OLD STUFF AFTER -----
