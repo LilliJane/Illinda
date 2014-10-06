@@ -158,9 +158,6 @@ div.container {
 /*@import url("http://fonts.googleapis.com/css?family=Lato");*/
 
 body > .tabs {
-	position: absolute;
-	top: 0;
-	right: 0;
 	padding: 20px;
 	text-align: left;
 	/*font-family: Lato;*/
@@ -182,10 +179,9 @@ body > .tabs {
 
 .tabs {
   width: 650px;
-  float: none;
   list-style: none;
   position: relative;
-  margin: 80px 0 0 10px;
+/*  margin: 80px 0 0 10px;*/
   text-align: left;
 }
 .tabs li {
@@ -333,4 +329,10 @@ canvas {
 	width: 15px; height: 15px;
 	background-color: grey;
 	border-radius: 50%; visibility:hidden;
+}
+
+/* fix tabs */
+
+.right_part {
+	float: right; width: 34.5%; height: 100%;
 }

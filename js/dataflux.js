@@ -3,7 +3,7 @@ $(document).ready(function(){
 /*================================================
 =            SECTION - Follow the dot            =
 ================================================*/
-	
+ 
 // VARS
 var quantity = 50, //number of dots
 	duration = 10,  //duration (in seconds)
@@ -27,14 +27,13 @@ var quantity = 50, //number of dots
 	// Loop Machine for Tween
 	for (i = 0; i < quantity; i++) {
 		tween.time(i); //jumps to the appropriate time in the tween, causing position.x and position.y to be updated accordingly.
-
 		dot = $("<div />", {id:"dot"+i}).addClass("adotf")
 					.css({left:position.x+"px", top:position.y+"px"})
 					.appendTo("#pageOne"); //EDIT for the good div : PageOne ...
 					//create a new dot, add the .adot class, set the position, and add it to the body.
 		tl.set(dot, {visibility:"visible"}, i * (duration / quantity)); //toggle the visibility on at the appropriate time.
+		tl.to(dot, .3, {autoAlpha:0, display:"none"});
 	}
-
 
 	/* Test Point n2 */
 var quantity2 = 50, //number of dots
@@ -65,6 +64,7 @@ var quantity2 = 50, //number of dots
 					.appendTo("#pageOne"); //EDIT for the good div : PageOne ...
 					//create a new dot, add the .adot class, set the position, and add it to the body.
 		tl2.set(dot2, {visibility:"visible"}, i2 * (duration2 / quantity2)); //toggle the visibility on at the appropriate time.
+		//tl2.to(dot2, 1, {autoAlpha:0, display:"none"}); //pour effacer les traces du gris
 	}
 
 	// --------- OLD STUFF AFTER -----
