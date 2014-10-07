@@ -291,7 +291,6 @@ body > .tabs {
 }
 
 
-
 /* Page1.2 */
 
 #pageTwo {
@@ -308,10 +307,7 @@ body > .tabs {
 	background-size: 100% 100%;
 }
 
-
-
 /* VELOCITY */
-
 canvas {
 	width: 900px; height: 800px;
 	position: absolute; top: 0;
@@ -334,7 +330,41 @@ canvas {
 }
 
 /* fix tabs */
-
 .right_part {
 	float: right; width: 34.5%; height: 100%;
+}
+
+/* legend */
+.legend {
+	position: relative;
+	top: 30%;
+	width: 34.5%;
+	height: 33%;
+	margin-left: -10% !important;
+}
+
+/* Progress Bar */
+.progressBar {
+  position: relative;
+  width: 95%;
+  height: 50px;
+  margin: 20px auto;
+  border: 3px solid #fab617;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressBar div {
+  position: relative;
+  height: 100%;
+  background-color: #fab617;
+}
+
+.progressBar .progressText {
+  position: absolute;
+  margin: 0 auto;
+  top: 12px;
+  left: 0;
+  right: 0;
+  background-color: transparent;
 }

@@ -5,7 +5,7 @@ $(document).ready(function(){
 ================================================*/
  
 // VARS
-var quantity = 150, //number of dots
+var quantity = 100, //number of dots
 	duration = 60,  //duration (in seconds)
 	path = [{x:0, y:250}, {x:50, y:350}, {x:300, y:280}, {x:400, y:570}, {x:500, y:250}], 
 		//points on the path (BezierPlugin will plot a Bezier through these). Adjust however you please.
@@ -32,11 +32,11 @@ var quantity = 150, //number of dots
 					.appendTo("#pageOne"); //EDIT for the good div : PageOne ...
 					//create a new dot, add the .adot class, set the position, and add it to the body.
 		tl.set(dot, {visibility:"visible"}, i * (duration / quantity)); //toggle the visibility on at the appropriate time.
-		tl.to(dot, .45, {autoAlpha:0, display:"none"});
+		tl.to(dot, .5, {autoAlpha:0, display:"none"});
 	}
 
 	/* Test Point n2 */
-var quantity2 = 150, //number of dots
+var quantity2 = 100, //number of dots
 	duration2 = 60,  //duration (in seconds)
 	path2 = [{x:850, y:457}, {x:550, y:350}, {x:537, y:280}, {x:450, y:570}, {x:280, y:657}, {x:90, y:250}, {x:0, y:250}], 
 		//points on the path (BezierPlugin will plot a Bezier through these). Adjust however you please.
@@ -64,8 +64,48 @@ var quantity2 = 150, //number of dots
 					.appendTo("#pageOne"); //EDIT for the good div : PageOne ...
 					//create a new dot, add the .adot class, set the position, and add it to the body.
 		tl2.set(dot2, {visibility:"visible"}, i2 * (duration2 / quantity2)); //toggle the visibility on at the appropriate time.
-		tl2.to(dot2, .45, {autoAlpha:0, display:"none"}); //pour effacer les traces du gris
+		tl2.to(dot2, .5, {autoAlpha:0, display:"none"}); //pour effacer les traces du gris
 	}
+
+// Progress Bar
+var viewModel = function() {
+    self = this;
+
+    self.percentage = ko.observable(0);
+
+    self.percentage.subscribe(function () {
+      if (self.percentage() === 100) {
+        clearTimeout(timer);
+      }
+    });
+  };
+
+  ko.bindingHandlers.progressBar = {
+    init: function(element) {
+      return { controlsDescendantBindings: true };
+    },
+    update : function(element, valueAccessor, bindingContext) {
+      var options = ko.unwrap(valueAccessor());
+
+      var value = options.value();
+
+      var width = value + "%";
+      
+      $(element).addClass("progressBar");
+
+      ko.applyBindingsToNode(element, {
+        html : '<div data-bind="style: { width: \'' + width + '\' }"></div><div class="progressText" data-bind="text: \'' + value + ' %\'"></div>'
+      });
+
+      ko.applyBindingsToDescendants(bindingContext, element);
+    }
+  };
+
+  var viewModelObj = new viewModel();
+
+  ko.applyBindings(viewModelObj);
+
+  var timer = setInterval(function() { viewModelObj.percentage(viewModelObj.percentage() + 1); }, 50);
 
 	// --------- OLD STUFF AFTER -----
 
