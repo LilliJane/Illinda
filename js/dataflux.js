@@ -67,7 +67,7 @@ var quantity2 = 100, //number of dots
 		tl2.to(dot2, .5, {autoAlpha:0, display:"none"}); //pour effacer les traces du gris
 	}
 
-// Progress Bar
+// Timeline
 var viewModel = function() {
     self = this;
 
