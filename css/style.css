@@ -216,7 +216,7 @@ body > .tabs {
 	z-index: 2;
 	display: none;
 	overflow: hidden;
-	width: 64%;
+	width: 68%;
 	font-size: 1.4em;
 	text-align: justify;
 	line-height: 25px;
@@ -299,7 +299,7 @@ body > .tabs {
 	z-index: 2;
 	display: none;
 	overflow: hidden;
-	width: 75%;
+	width: 68%;
 	font-size: 1.6em;
 	text-align: justify;
 	line-height: 25px;
@@ -376,7 +376,7 @@ body > .tabs {
 	z-index: 2;
 	display: none;
 	overflow: hidden;
-	width: 75%;
+	width: 68%;
 	font-size: 1.6em;
 	text-align: justify;
 	line-height: 25px;
@@ -402,7 +402,7 @@ body > .tabs {
 /* Follow Btn  */
 
 .follow {
-	position: absolute; bottom: 5%;
+	position: absolute; bottom: 10%;
 	height: 10%; width: 10%;
 	display: inline-block;
 	margin-left: 23%;
