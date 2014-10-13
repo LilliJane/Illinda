@@ -217,13 +217,15 @@ body > .tabs {
 	display: none;
 	overflow: hidden;
 	width: 75%;
-	font-size: 17px;
+	font-size: 1.6em;
+	text-align: justify;
 	line-height: 25px;
 	padding: 2%;
+	padding-right: 4%;
 	position: absolute;
 	top: 53px;
 	left: 0;
-	background: white;
+	background: #d3d3d3;
 	margin-left: 1%;
 }
 .tabs [id^="tab"]:checked + label {
@@ -236,13 +238,174 @@ body > .tabs {
   	display: block;
 }
 
+body > .tabs {
+	padding: 20px;
+	text-align: left;
+	/*font-family: Lato;*/
+}
+
+/* tib */
+
+.tibs > h1 {
+	font-weight: normal;
+	font-size: 40px;
+	font-weight: normal;
+	text-transform: uppercase;
+	float: left;
+	margin: 20px 0 100px 10px;
+}
+.tibs >  h1 span {
+	font-size: 13px;
+	display: block;
+	padding-left: 4px;
+}
+
+.tibs {
+	width: 650px;
+	list-style: none;
+	position: relative;
+	text-align: left;
+}
+.tibs li {
+	float: left;
+	display: block;
+}
+.tibs input[type="radio"] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.tibs label {
+	display: block;
+	padding: 14px 21px;
+	border-radius: 2px 2px 0 0;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	background: white;
+	cursor: pointer;
+	position: relative;
+	top: 4px;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.tibs label:hover {
+	background:grey;
+	color: white;
+}
+.tibs .tib-content {
+	z-index: 2;
+	display: none;
+	overflow: hidden;
+	width: 75%;
+	font-size: 1.6em;
+	text-align: justify;
+	line-height: 25px;
+	padding: 2%;
+	padding-right: 4%;
+	position: absolute;
+	top: 53px;
+	left: 0;
+	background: #d3d3d3;
+	margin-left: 1%;
+}
+.tibs [id^="tib"]:checked + label {
+	top: 0;
+	padding-top: 17px;
+	background: black;
+	color: white;
+}
+.tibs [id^="tib"]:checked ~ [id^="tib-content"] {
+  	display: block;
+}
+
+/* teb */
+
+.tebs > h1 {
+	font-weight: normal;
+	font-size: 40px;
+	font-weight: normal;
+	text-transform: uppercase;
+	float: left;
+	margin: 20px 0 100px 10px;
+}
+.tebs >  h1 span {
+	font-size: 13px;
+	display: block;
+	padding-left: 4px;
+}
+
+.tebs {
+	width: 650px;
+	list-style: none;
+	position: relative;
+	text-align: left;
+}
+.tebs li {
+	float: left;
+	display: block;
+}
+.tebs input[type="radio"] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.tebs label {
+	display: block;
+	padding: 14px 21px;
+	border-radius: 2px 2px 0 0;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	background: white;
+	cursor: pointer;
+	position: relative;
+	top: 4px;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.tebs label:hover {
+	background:grey;
+	color: white;
+}
+.tebs .teb-content {
+	z-index: 2;
+	display: none;
+	overflow: hidden;
+	width: 75%;
+	font-size: 1.6em;
+	text-align: justify;
+	line-height: 25px;
+	padding: 2%;
+	padding-right: 4%;
+	position: absolute;
+	top: 53px;
+	left: 0;
+	background: #d3d3d3;
+	margin-left: 1%;
+}
+.tebs [id^="teb"]:checked + label {
+	top: 0;
+	padding-top: 17px;
+	background: black;
+	color: white;
+}
+.tebs [id^="teb"]:checked ~ [id^="teb-content"] {
+  	display: block;
+}
+
+
 /* Follow Btn  */
 
 .follow {
-	position: absolute; bottom: 2%; 
+	position: absolute; bottom: 5%;
 	height: 10%; width: 10%;
 	display: inline-block;
-	margin-left: 3%;
+	margin-left: 23%;
 	background-color: black;
 	z-index: 100;
 }
@@ -335,36 +498,10 @@ canvas {
 }
 
 /* legend */
-.legend {
+/*.legend {
 	position: relative;
 	top: 30%;
 	width: 34.5%;
 	height: 33%;
-	margin-left: -10% !important;
-}
-
-/* Progress Bar */
-.progressBar {
-  position: relative;
-  width: 95%;
-  height: 50px;
-  margin: 20px auto;
-  border: 3px solid #fab617;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.progressBar div {
-  position: relative;
-  height: 100%;
-  background-color: #fab617;
-}
-
-.progressBar .progressText {
-  position: absolute;
-  margin: 0 auto;
-  top: 12px;
-  left: 0;
-  right: 0;
-  background-color: transparent;
+	margin-left: -10% !important;*/
 }
