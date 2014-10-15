@@ -462,6 +462,10 @@ body > .tabs {
   outline: none;
 }
 
+.follow a:hover,  .follow a:active, .follow a:focus {
+    outline: none;
+}
+
 /* Back Btn  */
 
 .back {
