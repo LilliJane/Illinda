@@ -491,6 +491,7 @@ body > .tabs {
 
 .back > a {
     color: white;
+    text-decoration: none;
 }
 
 .back:hover {
