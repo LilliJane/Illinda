@@ -503,6 +503,10 @@ body > .tabs {
     text-decoration: none;
 }
 
+.back a:hover,  .back a:active, .back a:focus {
+    outline: none;
+}
+
 /*Page 1.1 */
 
 #pageOne {

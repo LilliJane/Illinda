@@ -1,0 +1,19 @@
+.back {
+	position: absolute; bottom: 2%; 
+	height: 10%; width: 30%;
+	display: inline-block;
+	margin-left: 3%;
+	background-color: black;
+	z-index: 100;
+}
+
+.back > a {
+	text-decoration: none;
+	color: white;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 3em;
+	height: 100%;
+	width: 100%;
+	padding: 20% 5%;
+}
