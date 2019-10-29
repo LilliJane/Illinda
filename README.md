@@ -1,15 +1,16 @@
-Illinda
-========
+# Illinda
+> Tomorrow's smart city.
 
-La ville intelligente de demain.
-Le projet Illinda est un projet de Datavisualisation des données de la ville de Bordeaux et de ses citoyens, créé et développé par quatre étudiants issus de trois écoles différentes. Un graphiste, deux développeurs et une chargée de communication travaillent ensemble sur la problématique de la ville intelligente de demain. Le projet sera présenté lors de la Semaine Digitale à partir du 13 octobre 2014 à Bordeaux. L’idée est de faire un état des lieux des initiatives de la ville en terme de numérique et de ville intelligente, ainsi qu’une ouverture sur son futur  année+10 , en utilisant la datavisualisation comme support. L’équipa utilise alors des données en Open Data, des données privées, ainsi que des données simulées dans l’objectif de prédire certains comportements.
+The Illinda project is about the visualisation of the Data of the French city of Bordeaux and its citizens. It is created by 4 students coming from 3 different schools. A graphic designer, two developers and a Communications Officer working together to solve the issue of tomorrow's smart city. The project was presented for the Digital week on the 13th of October 2014 in Bordeaux. The idea was to have a look at what has already been made in terms of digital progress, open data, the smart city and its state 10 years from now. All of which using data visualisation as a support. The team is planning on using Open Data, private data and simulated data in order to predict some behaviours.
 
-https://www.facebook.com/illindabdx
+### Social Networks
 
-https://twitter.com/illindabdx
+[Facebook](https://www.facebook.com/illindabdx)
 
-==========================
+[Twitter](https://twitter.com/illindabdx)
 
+
+## Goals
 Smart city of tomorrow.
 Illinda is a project of datavisualisation about Bordeaux's open data.
 
@@ -18,23 +19,26 @@ This is the visual processing of the information from a database.
 
 Project that will be presented during the Bordeaux's digital week #4.
 
-====
-Utilisation de Nginx, Ruby.
+## How to run it
+Relies on Nginx and Ruby.
 
-Pour installer nginx : 
-S'il faut lier l'utilisation de rails à nginx, utiliser la gem passenger. https://www.phusionpassenger.com/documentation/Users%20guide%20Nginx.html#rubygems_generic_install
-- installer depuis les sources via nginx.org et wget
-- ./configure \
+In order to install nginx : 
+If you need to link the install of rails to nginx, use the gem passenger. https://www.phusionpassenger.com/documentation/Users%20guide%20Nginx.html#rubygems_generic_install
+1. install sources via nginx.org & wget
+2. 
+  ```bash
+  $ ./configure \
   --prefix=/usr/local \
   --sbin-path=/usr/local/sbin \
   --conf-path=/etc/nginx/nginx.conf \
   --error-log-path=/var/log/nginx/error.log \
   --http-log-path=/var/log/nginx/access.log \
   --with-ipv6
-- S'il manque la lib pcre, aller sur http://www.pcre.org/ et utiliser le lien ftp.
-- make
-- make install
-- Ensuite, éditer le fichier /etc/nginx/nginx.conf (voir nginx.conf) puis /etc/nginx/sites-available/default.
-- Intégrer le script via https://github.com/Fleshgrinder/nginx-sysvinit-script (tuto ++), attention valable pour debian !!!
+  ```
+3. If you miss the lib pcre, use the FTP link on http://www.pcre.org/ 
+4. `$ make`
+5. `$ make install`
+6. Edit **/etc/nginx/nginx.conf** (see nginx.conf) then **/etc/nginx/sites-available/default**.
+7. Integrate the script using https://github.com/Fleshgrinder/nginx-sysvinit-script (tuto ++), works on Debian !!!
 
 
